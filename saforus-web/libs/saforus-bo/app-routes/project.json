@@ -1,0 +1,16 @@
+{
+  "name": "saforus-bo-app-routes",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus-bo/app-routes/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/saforus-bo/app-routes/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

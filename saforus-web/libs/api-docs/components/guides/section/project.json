@@ -1,0 +1,18 @@
+{
+  "name": "api-docs-components-guides-section",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-docs/components/guides/section/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-docs/components/guides/section/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

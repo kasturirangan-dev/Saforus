@@ -1,0 +1,16 @@
+{
+  "name": "api-console-themes",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-console/themes/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/api-console/themes/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

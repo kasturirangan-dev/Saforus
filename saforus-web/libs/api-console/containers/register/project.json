@@ -1,0 +1,18 @@
+{
+  "name": "api-console-containers-register",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-console/containers/register/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-console/containers/register/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

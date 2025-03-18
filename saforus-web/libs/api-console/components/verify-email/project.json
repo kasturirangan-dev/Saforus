@@ -1,0 +1,18 @@
+{
+  "name": "apic-console-components-verify-email",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/apic-console/components/verify-email/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/apic-console/components/verify-email/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

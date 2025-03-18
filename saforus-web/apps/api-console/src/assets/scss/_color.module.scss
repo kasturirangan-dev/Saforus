@@ -1,0 +1,249 @@
+:root {
+  /* Base */
+  --base-white: #ffffff;
+  --base-black: #151b28;
+  --main-brand: #9c32ef;
+
+  /* Primary (Blue) */
+  --blue-25: #f5faff;
+  --blue-50: #f5f8fe;
+  --blue-100: #e8effd;
+  --blue-200: #b1ccfb;
+  --blue-300: #aec9fe;
+  --blue-400: #648ef7;
+  --blue-500: #5390f8;
+  --blue-550: #5B89FF;
+  --blue-600: #437ef7;
+  --blue-700: #3971e7;
+  --blue-800: #3e67e3;
+  --blue-900: #2b63d9;
+  --blue-925: #006fd4;
+  --blue-950: #1b4397;
+  --navy-950: #163a6a;
+
+  /* Neutral */
+  --neutral-25: #fcfcfd;
+  --neutral-50: #fafbfc;
+  --neutral-100: #f8f9fb;
+  --neutral-200: #f9f9f9;
+  --neutral-300: #f7f7f8;
+  --neutral-400: #f5f5f5;
+  --neutral-500: #efeff1;
+  --neutral-600: #eaecf0;
+  --neutral-700: #dddfe4;
+  --neutral-750: #dae0e6;
+  --neutral-800: #a5acba;
+  --neutral-900: #878d97;
+  --neutral-950: #6b7b8f;
+  --neutral-1000: #e5e5e5;
+
+  /* Gray */
+  --gray-25: #919ba7;
+  --gray-25-opacity: rgba(240, 240, 240, 0.8);
+  --gray-50: #5f6d7e;
+  --gray-100: #49556d;
+  --gray-200: #384255;
+  --gray-300: #2e3545;
+  --gray-400: #333b48;
+  --gray-500: #2e3646;
+  --gray-600: #2c3444;
+  --gray-700: #272d37;
+  --gray-800: #252d3c;
+  --gray-900: #1c2534;
+  --gray-950: #151b28;
+
+  /* Error - red */
+  --red-25: #fef6f6;
+  --red-50: #fef6f6;
+  --red-100: #fff2f0;
+  --red-200: #ffdbd7;
+  --red-300: #feb8ae;
+  --red-400: #fd5e49;
+  --red-450: #f15146;
+  --red-500: #f04438;
+  --red-600: #e2341d;
+  --red-700: #b02817;
+  --red-900: #3e2026;
+  --red-950: #3e2026;
+
+  /* Warning - orange */
+  --orange-25: #fff8eb;
+  --orange-50: #fff8eb;
+  --orange-100: #ffe4c0;
+  --orange-200: #ffdda1;
+  --orange-300: #ffd08a;
+  --orange-400: #ffc772;
+  --orange-500: #ffae43;
+  --orange-600: #eea23e;
+  --orange-700: #d78100;
+  --orange-800: #a15c00;
+  --orange-900: #6b3d00;
+  --orange-950: #6b3d00;
+
+  /* Success - green */
+  --green-25: #f0faf0;
+  --green-50: #f0faf0;
+  --green-100: #c9ebcb;
+  --green-200: #a6e1a8;
+  --green-300: #93d698;
+  --green-400: #7fd184;
+  --green-500: #5dc264;
+  --green-600: #41ae49;
+  --green-700: #2d8a39;
+  --green-800: #27682c;
+  --green-900: #1a451d;
+  --green-925: #1b807b;
+  --green-950: #1a451d;
+
+  /* Purp-e */
+  --purple-25: #f9f8fb;
+  --purple-50: #ecebff;
+  --purple-100: #c7c4fd;
+  --purple-200: #aba7fd;
+  --purple-300: #8f89fc;
+  --purple-400: #736cfb;
+  --purple-500: #5d55f6;
+  --purple-600: #574efa;
+  --purple-700: #463ee3;
+  --purple-800: #352dc8;
+  --purple-900: #33059f;
+  --purple-950: #33059f;
+
+  /*Gradient Generic variables*/
+  /* gradient blue */
+  --primary-linear-100-400: linear-gradient(90deg, #b2ccff 0%, #528bff 100%);
+  --primary-linear-800-400: linear-gradient(
+    25deg,
+    #0040c1 12.38%,
+    #528bff 87.62%
+  );
+  --primary-linear-900-600: linear-gradient(
+    45deg,
+    #0848af 14.64%,
+    #3971e7 85.36%
+  );
+  --primary-angular-25-900: conic-gradient(
+    from 225deg at 50% 50%,
+    #f5f8ff 0deg,
+    #00359e 360deg
+  );
+  --primary-linear-soft-base: linear-gradient(
+    225deg,
+    #b2ccff 14.64%,
+    #1058e8 85.36%
+  );
+
+  /* gray */
+  --gray-linear-100-400: linear-gradient(90deg, #f2f4f7 0%, #98a2b3 100%);
+  --gray-linear-800-400: linear-gradient(25deg, #1d2939 12.38%, #98a2b3 87.62%);
+  --gray-linear-900-600: linear-gradient(45deg, #101828 14.64%, #475467 85.36%);
+  --gray-angular-25-900: conic-gradient(
+    from 225deg at 50% 50%,
+    #fcfcfd 0deg,
+    #101828 360deg
+  );
+  --primary-linear-decorative-base: linear-gradient(
+    225deg,
+    #0046d1 14.64%,
+    #a48afb 85.36%
+  );
+
+  // main linear color
+  --main-brand-color3: linear-gradient(90deg, #a032f6 0%, #2e58c9 100%);
+  --main-brand-color3-revert: linear-gradient(90deg, #2e58c9 0%, #a032f6 100%);
+
+  // fade color
+  --fade-gradient-gray: linear-gradient(
+    0deg,
+    rgba(22, 35, 45, 0.8) 0%,
+    rgba(255, 255, 255, 0) 75.08%
+  );
+  --fade-gradient-second-color: linear-gradient(
+    0deg,
+    #155b75 0%,
+    rgba(245, 254, 255, 0) 100%
+  );
+  --fade-gradient-primary-color: linear-gradient(
+    0deg,
+    #3971e7 0%,
+    rgba(57, 113, 231, 0.8) 0.01%,
+    rgba(63, 117, 231, 0.2) 100%
+  );
+
+  /* dark theme */
+  --dark-theme: var(--gray-950);
+  --dark-body: var(--gray-950);
+  --dark-color: var(--neutral-200);
+
+  /* shadow */
+  --shadow-xsm: 0px 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-sm: 0px 1px 2px -1px rgba(16, 24, 40, 0.1),
+    0px 1px 3px rgba(16, 24, 40, 0.1);
+  --shadow-md: 0px 2px 4px -2px rgba(16, 24, 40, 0.1),
+    0px 4px 6px -1px rgba(16, 24, 40, 0.1);
+  --shadow-lg: 0px 4px 6px -4px rgba(16, 24, 40, 0.1),
+    0px 10px 15px -3px rgba(16, 24, 40, 0.1);
+  --shadow-xl: 0px 8px 10px -6px rgba(16, 24, 40, 0.1),
+    0px 20px 25px -5px rgba(16, 24, 40, 0.1);
+  --shadow-2xl: 0px 25px 50px -12px rgba(16, 24, 40, 0.25);
+  --shadow-hover: 0px 2px 4px -2px rgba(16, 24, 40, 0.05),
+    0px 4px 6px -1px rgba(16, 24, 40, 0.03);
+  --shadow-soft: 0px 0px 1px rgba(113, 128, 150, 0.04),
+    0px 4px 8px rgba(113, 128, 150, 0.08);
+
+  /* blur */
+  --blur-7: rgba(255, 255, 255, 0.5);
+  --blur-50: rgba(255, 255, 255, 0.5);
+
+  /* Overlay */
+  --overlay-light: rgba(255, 255, 255, 0.95);
+  --overlay-dark: rgba(15, 23, 36, 0.85);
+  --overlay-color: rgba(69, 104, 241, 0.85);
+}
+
+.layout-blur-7 {
+  background: var(--blur-7);
+  backdrop-filter: blur(3.5px);
+}
+
+.layout-blur-50 {
+  background: var(--blur-50);
+  backdrop-filter: blur(25px);
+}
+
+@supports (-webkit-backdrop-filter: blur(3.5px)) or
+  (backdrop-filter: blur(3.5px)) {
+  .layout-blur-7 {
+    background: var(--blur-7);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+  }
+}
+
+@supports (-webkit-backdrop-filter: blur(25px)) or (backdrop-filter: blur(25px)) {
+  .layout-blur-50 {
+    background: var(--blur-50);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+  }
+}
+
+.layout-overlay-light {
+  background: var(--overlay-light);
+  background-blend-mode: multiply;
+}
+
+.layout-overlay-dark {
+  background: var(--overlay-dark);
+  background-blend-mode: multiply;
+}
+
+.layout-overlay-dark {
+  background: var(--overlay-color);
+  background-blend-mode: multiply;
+}
+
+.layout-fade-primary {
+  background: var(--fade-gradient-second-color);
+  background-blend-mode: multiply;
+}

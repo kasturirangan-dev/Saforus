@@ -1,0 +1,91 @@
+{
+  "name": "saforus-webapp",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/saforus-webapp/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/saforus-webapp"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        },
+        "staging": {
+          "mode": "staging"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "saforus-webapp:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "saforus-webapp:build:development",
+          "hmr": true,
+          "proxyConfig": "apps/saforus-webapp/proxy.conf.json"
+        },
+        "production": {
+          "buildTarget": "saforus-webapp:build:production",
+          "hmr": false
+        },
+        "staging": {
+          "buildTarget": "saforus-webapp:build:staging",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "saforus-webapp:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "saforus-webapp:build:development"
+        },
+        "production": {
+          "buildTarget": "saforus-webapp:build:production"
+        },
+        "staging": {
+          "buildTarget": "saforus-webapp:build:staging"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": [
+        "coverage/apps/saforus-webapp"
+      ],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/apps/saforus-webapp"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/saforus-webapp/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

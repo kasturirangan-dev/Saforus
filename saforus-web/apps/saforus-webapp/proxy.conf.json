@@ -1,0 +1,7 @@
+{
+  "/api/v1/": {
+    "target": "https://dev-cs.saforus.com",
+    "secure": true,
+    "changeOrigin": true
+  }
+}

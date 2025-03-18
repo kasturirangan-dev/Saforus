@@ -1,0 +1,30 @@
+ARG AWS_ACCOUNT_ID
+FROM $AWS_ACCOUNT_ID.dkr.ecr.ap-northeast-2.amazonaws.com/markany-cs-web:a64052da9f2a712696fac335486311720d97dbe0
+MAINTAINER markany.com
+
+WORKDIR /app
+
+# Copy package.json and pnpm-lock.yaml first to leverage Docker cache
+COPY package.json pnpm-lock.yaml ./
+
+# Copy the patch file before running pnpm install
+COPY patches patches
+
+# Install dependencies
+RUN npx pnpm install
+
+# Copy the rest of the application code
+COPY . .
+
+ARG WEB_ENV
+ARG APP_NAME=saforus-webapp
+
+# Set environment variables
+ENV DOCKER_ENV=true \
+    PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
+    PUPPETEER_EXECUTABLE_PATH=/opt/google/chrome/google-chrome
+
+# Build the application and generate the nx graph
+RUN echo "Building application with APP_NAME=$APP_NAME and WEB_ENV=$WEB_ENV" \
+    && npx pnpm run build -- $APP_NAME --mode $WEB_ENV \
+    && npx nx dep-graph --file=graph-output.html

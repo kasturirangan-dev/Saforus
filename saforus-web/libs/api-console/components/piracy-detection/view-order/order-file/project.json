@@ -1,0 +1,18 @@
+{
+  "name": "api-console-components-piracy-detection-view-order-order-file",
+  "$schema": "../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-console/components/piracy-detection/view-order/order-file/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-console/components/piracy-detection/view-order/order-file/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "api-console-containers-my-account",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-console/containers/my-account/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-console/containers/my-account/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

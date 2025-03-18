@@ -1,0 +1,18 @@
+{
+  "name": "saforus-containers-help-inquiry-detail",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus/containers/help/inquiry-detail/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus/containers/help/inquiry-detail/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

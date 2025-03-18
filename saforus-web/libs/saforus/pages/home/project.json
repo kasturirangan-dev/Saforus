@@ -1,0 +1,16 @@
+{
+  "name": "saforus-pages-home",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus/pages/home/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/saforus/pages/home/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

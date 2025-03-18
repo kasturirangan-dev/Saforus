@@ -1,0 +1,16 @@
+{
+  "name": "api-bo-common-model",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-bo/common/model/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/api-bo/common/model/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

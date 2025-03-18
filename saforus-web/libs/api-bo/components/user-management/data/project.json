@@ -1,0 +1,18 @@
+{
+  "name": "api-bo-components-user-management-data",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-bo/components/user-management/data/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-bo/components/user-management/data/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

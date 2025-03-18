@@ -1,0 +1,16 @@
+{
+  "name": "api-docs-themes",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-docs/themes/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/api-docs/themes/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "saforus-pages-reset-password-done",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus/pages/reset-password-done/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus/pages/reset-password-done/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

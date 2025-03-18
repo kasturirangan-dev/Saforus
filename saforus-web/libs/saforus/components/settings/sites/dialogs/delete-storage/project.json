@@ -1,0 +1,18 @@
+{
+  "name": "saforus-components-settings-sites-dialogs-delete-storage",
+  "$schema": "../../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus/components/settings/sites/dialogs/delete-storage/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus/components/settings/sites/dialogs/delete-storage/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

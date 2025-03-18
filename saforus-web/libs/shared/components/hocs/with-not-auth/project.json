@@ -1,0 +1,18 @@
+{
+  "name": "shared-components-hocs-with-not-auth",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/components/hocs/with-not-auth/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/components/hocs/with-not-auth/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

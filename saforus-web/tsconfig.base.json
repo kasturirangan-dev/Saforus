@@ -1,0 +1,1685 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types", "@types"],
+    "paths": {
+      "@locales/*": ["locales/*"],
+      "@web-workspace/api-bo/app-routes": [
+        "libs/api-bo/app-routes/src/index.ts"
+      ],
+      "@web-workspace/api-bo/common/model": [
+        "libs/api-bo/common/model/src/index.ts"
+      ],
+      "@web-workspace/api-bo/common/views": [
+        "libs/api-bo/common/views/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/admin-dashboard/data": [
+        "libs/api-bo/components/admin-dashboard/data/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/admin-dashboard/dialogs/add-user": [
+        "libs/api-bo/components/admin-dashboard/dialogs/add-user/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/admin-dashboard/dialogs/edit-user": [
+        "libs/api-bo/components/admin-dashboard/dialogs/edit-user/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/dashboard/data": [
+        "libs/api-bo/components/dashboard/data/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/dashboard/filter": [
+        "libs/api-bo/components/dashboard/filter/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/dashboard/service-usage": [
+        "libs/api-bo/components/dashboard/service-usage/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/dashboard/usage-overview": [
+        "libs/api-bo/components/dashboard/usage-overview/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/layouts/main-layout": [
+        "libs/api-bo/components/layouts/main-layout/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/layouts/navbar": [
+        "libs/api-bo/components/layouts/navbar/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/layouts/side-menu": [
+        "libs/api-bo/components/layouts/side-menu/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/login/form": [
+        "libs/api-bo/components/login/form/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/user-management/data": [
+        "libs/api-bo/components/user-management/data/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/user-management/dialogs/add-user": [
+        "libs/api-bo/components/user-management/dialogs/add-user/src/index.ts"
+      ],
+      "@web-workspace/api-bo/components/user-management/dialogs/edit-user": [
+        "libs/api-bo/components/user-management/dialogs/edit-user/src/index.ts"
+      ],
+      "@web-workspace/api-bo/constants/routes": [
+        "libs/api-bo/constants/routes/src/index.ts"
+      ],
+      "@web-workspace/api-bo/constants/validation": [
+        "libs/api-bo/constants/validation/src/index.ts"
+      ],
+      "@web-workspace/api-bo/containers/admin-dashboard": [
+        "libs/api-bo/containers/admin-dashboard/src/index.ts"
+      ],
+      "@web-workspace/api-bo/containers/dashboard": [
+        "libs/api-bo/containers/dashboard/src/index.ts"
+      ],
+      "@web-workspace/api-bo/containers/login": [
+        "libs/api-bo/containers/login/src/index.ts"
+      ],
+      "@web-workspace/api-bo/containers/user-management": [
+        "libs/api-bo/containers/user-management/src/index.ts"
+      ],
+      "@web-workspace/api-bo/pages/admin": [
+        "libs/api-bo/pages/admin/src/index.ts"
+      ],
+      "@web-workspace/api-bo/pages/dashboard": [
+        "libs/api-bo/pages/dashboard/src/index.ts"
+      ],
+      "@web-workspace/api-bo/pages/login": [
+        "libs/api-bo/pages/login/src/index.ts"
+      ],
+      "@web-workspace/api-bo/pages/user-management/manage-account": [
+        "libs/api-bo/pages/user-management/manage-account/src/index.ts"
+      ],
+      "@web-workspace/api-bo/pages/user-management/service-plan": [
+        "libs/api-bo/pages/user-management/service-plan/src/index.ts"
+      ],
+      "@web-workspace/api-bo/themes": ["libs/api-bo/themes/src/index.ts"],
+      "@web-workspace/api-console/app-routes": [
+        "libs/api-console/app-routes/src/index.ts"
+      ],
+      "@web-workspace/api-console/common/model": [
+        "libs/api-console/common/model/src/index.ts"
+      ],
+      "@web-workspace/api-console/common/views": [
+        "libs/api-console/common/views/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/api-key/data": [
+        "libs/api-console/components/api-key/data/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/api-key/dialogs/create-api-key": [
+        "libs/api-console/components/api-key/dialogs/create-api-key/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/api-key/dialogs/delete-api-key": [
+        "libs/api-console/components/api-key/dialogs/delete-api-key/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/api-key/dialogs/edit-api-key": [
+        "libs/api-console/components/api-key/dialogs/edit-api-key/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/dashboard/data": [
+        "libs/api-console/components/dashboard/data/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/dashboard/filter": [
+        "libs/api-console/components/dashboard/filter/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/dashboard/service-usage": [
+        "libs/api-console/components/dashboard/service-usage/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/dashboard/usage-overview": [
+        "libs/api-console/components/dashboard/usage-overview/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/file-upload": [
+        "libs/api-console/components/file-upload/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/layouts/dialogs/guest-redirect-dialog": [
+        "libs/api-console/components/layouts/dialogs/guest-redirect-dialog/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/layouts/main-layout": [
+        "libs/api-console/components/layouts/main-layout/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/layouts/navbar": [
+        "libs/api-console/components/layouts/navbar/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/layouts/side-menu": [
+        "libs/api-console/components/layouts/side-menu/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/login/form": [
+        "libs/api-console/components/login/form/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/my-account/data": [
+        "libs/api-console/components/my-account/data/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/my-account/dialogs/avatar-editor": [
+        "libs/api-console/components/my-account/dialogs/avatar-editor/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/my-account/dialogs/change-password": [
+        "libs/api-console/components/my-account/dialogs/change-password/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/my-account/dialogs/current-password": [
+        "libs/api-console/components/my-account/dialogs/current-password/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/my-account/dialogs/delete-confirmation": [
+        "libs/api-console/components/my-account/dialogs/delete-confirmation/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/my-account/dialogs/edit-profile": [
+        "libs/api-console/components/my-account/dialogs/edit-profile/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/my-account/dialogs/edit-timezone": [
+        "libs/api-console/components/my-account/dialogs/edit-timezone/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/my-account/user-profile": [
+        "libs/api-console/components/my-account/user-profile/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/myplan/data": [
+        "libs/api-console/components/myplan/data/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/myplan/dialogs/payment-fail": [
+        "libs/api-console/components/myplan/dialogs/payment-fail/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/myplan/dialogs/plan-info": [
+        "libs/api-console/components/myplan/dialogs/plan-info/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/myplan/dialogs/subscription-result": [
+        "libs/api-console/components/myplan/dialogs/subscription-result/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/myplan/service-plan": [
+        "libs/api-console/components/myplan/service-plan/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/payment/card-logo": [
+        "libs/api-console/components/payment/card-logo/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/payment/card-management": [
+        "libs/api-console/components/payment/card-management/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/payment/payment-history": [
+        "libs/api-console/components/payment/payment-history/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/piracy-detection/create-new-request": [
+        "libs/api-console/components/piracy-detection/create-new-request/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/piracy-detection/data": [
+        "libs/api-console/components/piracy-detection/data/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/piracy-detection/find-order-number-data": [
+        "libs/api-console/components/piracy-detection/find-order-number-data/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/piracy-detection/find-order-number-dialog": [
+        "libs/api-console/components/piracy-detection/find-order-number-dialog/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/piracy-detection/order-file-preview-dialog": [
+        "libs/api-console/components/piracy-detection/order-file-preview-dialog/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/piracy-detection/view-order/order-detail": [
+        "libs/api-console/components/piracy-detection/view-order/order-detail/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/piracy-detection/view-order/order-file": [
+        "libs/api-console/components/piracy-detection/view-order/order-file/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/register-completed": [
+        "libs/api-console/components/register-completed/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/register-done": [
+        "libs/api-console/components/register-done/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/register/form": [
+        "libs/api-console/components/register/form/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/register/form/src/lib/dialogs/error-dialog": [
+        "libs/api-console/components/register/form/src/lib/dialogs/error-dialog/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/reset-account-password": [
+        "libs/api-console/components/reset-account-password/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/reset-password-done": [
+        "libs/api-console/components/reset-password-done/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/reset-password/form": [
+        "libs/api-console/components/reset-password/form/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/verify-email": [
+        "libs/api-console/components/verify-email/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/view-orders/breadcrumb": [
+        "libs/api-console/components/view-orders/breadcrumb/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/view-orders/data": [
+        "libs/api-console/components/view-orders/data/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/view-orders/delete-confirm-dialog": [
+        "libs/api-console/components/view-orders/delete-confirm-dialog/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/view-orders/order-list": [
+        "libs/api-console/components/view-orders/order-list/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/view-orders/order-search": [
+        "libs/api-console/components/view-orders/order-search/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/watermarking/create": [
+        "libs/api-console/components/watermarking/create/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/watermarking/data": [
+        "libs/api-console/components/watermarking/data/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/watermarking/view-order/order-detail": [
+        "libs/api-console/components/watermarking/view-order/order-detail/src/index.ts"
+      ],
+      "@web-workspace/api-console/components/watermarking/view-order/order-file": [
+        "libs/api-console/components/watermarking/view-order/order-file/src/index.ts"
+      ],
+      "@web-workspace/api-console/constants/routes": [
+        "libs/api-console/constants/routes/src/index.ts"
+      ],
+      "@web-workspace/api-console/constants/validation": [
+        "libs/api-console/constants/validation/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/api-key": [
+        "libs/api-console/containers/api-key/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/dashboard": [
+        "libs/api-console/containers/dashboard/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/detect-watermark": [
+        "libs/api-console/containers/detect-watermark/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/insert-watermark": [
+        "libs/api-console/containers/insert-watermark/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/login": [
+        "libs/api-console/containers/login/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/my-account": [
+        "libs/api-console/containers/my-account/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/myplan": [
+        "libs/api-console/containers/myplan/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/payment-management": [
+        "libs/api-console/containers/payment-management/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/register": [
+        "libs/api-console/containers/register/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/register-completed": [
+        "libs/api-console/containers/register-completed/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/register-done": [
+        "libs/api-console/containers/register-done/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/reset-account-password": [
+        "libs/api-console/containers/reset-account-password/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/reset-password": [
+        "libs/api-console/containers/reset-password/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/reset-password-done": [
+        "libs/api-console/containers/reset-password-done/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/verify-email": [
+        "libs/api-console/containers/verify-email/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/view-orders/order-list": [
+        "libs/api-console/containers/view-orders/order-list/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/view-orders/pd-order": [
+        "libs/api-console/containers/view-orders/pd-order/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/view-orders/pd-order-file": [
+        "libs/api-console/containers/view-orders/pd-order-file/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/view-orders/wtr-order": [
+        "libs/api-console/containers/view-orders/wtr-order/src/index.ts"
+      ],
+      "@web-workspace/api-console/containers/view-orders/wtr-order-file": [
+        "libs/api-console/containers/view-orders/wtr-order-file/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/api-key": [
+        "libs/api-console/pages/api-key/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/dashboard": [
+        "libs/api-console/pages/dashboard/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/detect-watermark": [
+        "libs/api-console/pages/detect-watermark/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/insert-watermark": [
+        "libs/api-console/pages/insert-watermark/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/login": [
+        "libs/api-console/pages/login/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/my-account": [
+        "libs/api-console/pages/my-account/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/myplan": [
+        "libs/api-console/pages/myplan/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/payment-management": [
+        "libs/api-console/pages/payment-management/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/register": [
+        "libs/api-console/pages/register/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/register-completed": [
+        "libs/api-console/pages/register-completed/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/register-done": [
+        "libs/api-console/pages/register-done/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/reset-account-password": [
+        "libs/api-console/pages/reset-account-password/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/reset-password": [
+        "libs/api-console/pages/reset-password/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/reset-password-done": [
+        "libs/api-console/pages/reset-password-done/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/verify-email": [
+        "libs/api-console/pages/verify-email/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/view-orders/order-list": [
+        "libs/api-console/pages/view-orders/order-list/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/view-orders/pd-order": [
+        "libs/api-console/pages/view-orders/pd-order/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/view-orders/pd-order-file": [
+        "libs/api-console/pages/view-orders/pd-order-file/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/view-orders/wtr-order": [
+        "libs/api-console/pages/view-orders/wtr-order/src/index.ts"
+      ],
+      "@web-workspace/api-console/pages/view-orders/wtr-order-file": [
+        "libs/api-console/pages/view-orders/wtr-order-file/src/index.ts"
+      ],
+      "@web-workspace/api-console/themes": [
+        "libs/api-console/themes/src/index.ts"
+      ],
+      "@web-workspace/api-doc": ["libs/api-doc/index.ts"],
+      "@web-workspace/api-doc/components/layouts/main-layout": [
+        "libs/api-doc/components/layouts/main-layout/src/index.ts"
+      ],
+      "@web-workspace/api-doc/components/layouts/navbar": [
+        "libs/api-doc/components/layouts/navbar/src/index.ts"
+      ],
+      "@web-workspace/api-doc/components/layouts/side-menu": [
+        "libs/api-doc/components/layouts/side-menu/src/index.ts"
+      ],
+      "@web-workspace/api-docs/app-routes": [
+        "libs/api-docs/app-routes/src/index.ts"
+      ],
+      "@web-workspace/api-docs/components/guides/code-view": [
+        "libs/api-docs/components/guides/code-view/src/index.ts"
+      ],
+      "@web-workspace/api-docs/components/guides/data": [
+        "libs/api-docs/components/guides/data/src/index.ts"
+      ],
+      "@web-workspace/api-docs/components/guides/layout": [
+        "libs/api-docs/components/guides/layout/src/index.ts"
+      ],
+      "@web-workspace/api-docs/components/guides/section": [
+        "libs/api-docs/components/guides/section/src/index.ts"
+      ],
+      "@web-workspace/api-docs/components/guides/specification-table": [
+        "libs/api-docs/components/guides/specification-table/src/index.ts"
+      ],
+      "@web-workspace/api-docs/components/layouts/main-layout": [
+        "libs/api-docs/components/layouts/main-layout/src/index.ts"
+      ],
+      "@web-workspace/api-docs/components/layouts/navbar": [
+        "libs/api-docs/components/layouts/navbar/src/index.ts"
+      ],
+      "@web-workspace/api-docs/components/layouts/side-menu": [
+        "libs/api-docs/components/layouts/side-menu/src/index.ts"
+      ],
+      "@web-workspace/api-docs/constants/routes": [
+        "libs/api-docs/constants/routes/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/api-integration/basic-concepts": [
+        "libs/api-docs/containers/api-integration/basic-concepts/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/api-integration/quick-start": [
+        "libs/api-docs/containers/api-integration/quick-start/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/csapi/api-keys": [
+        "libs/api-docs/containers/csapi/api-keys/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/csapi/authentication": [
+        "libs/api-docs/containers/csapi/authentication/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/csapi/delete-file": [
+        "libs/api-docs/containers/csapi/delete-file/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/csapi/detection": [
+        "libs/api-docs/containers/csapi/detection/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/csapi/share-file": [
+        "libs/api-docs/containers/csapi/share-file/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/csapi/watermarking": [
+        "libs/api-docs/containers/csapi/watermarking/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/error-codes": [
+        "libs/api-docs/containers/error-codes/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/term-definition": [
+        "libs/api-docs/containers/term-definition/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/user-guide": [
+        "libs/api-docs/containers/user-guide/src/index.ts"
+      ],
+      "@web-workspace/api-docs/containers/webhooks": [
+        "libs/api-docs/containers/webhooks/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/api-integration/basic-concepts": [
+        "libs/api-docs/pages/api-integration/basic-concepts/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/api-integration/quick-start": [
+        "libs/api-docs/pages/api-integration/quick-start/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/csapi/api-keys": [
+        "libs/api-docs/pages/csapi/api-keys/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/csapi/authentication": [
+        "libs/api-docs/pages/csapi/authentication/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/csapi/delete-file": [
+        "libs/api-docs/pages/csapi/delete-file/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/csapi/detection": [
+        "libs/api-docs/pages/csapi/detection/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/csapi/share-file": [
+        "libs/api-docs/pages/csapi/share-file/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/csapi/watermarking": [
+        "libs/api-docs/pages/csapi/watermarking/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/error-codes": [
+        "libs/api-docs/pages/error-codes/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/term-definition": [
+        "libs/api-docs/pages/term-definition/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/user-guide": [
+        "libs/api-docs/pages/user-guide/src/index.ts"
+      ],
+      "@web-workspace/api-docs/pages/webhooks": [
+        "libs/api-docs/pages/webhooks/src/index.ts"
+      ],
+      "@web-workspace/api-docs/themes": ["libs/api-docs/themes/src/index.ts"],
+      "@web-workspace/feature-flag-guard": [
+        "libs/feature-flag-guard/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/app-routes": [
+        "libs/saforus-bo/app-routes/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/common/data": [
+        "libs/saforus-bo/common/data/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/common/model": [
+        "libs/saforus-bo/common/model/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/common/view": [
+        "libs/saforus-bo/common/view/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/customer-support/data": [
+        "libs/saforus-bo/components/customer-support/data/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/customer-support/inquiry-detail": [
+        "libs/saforus-bo/components/customer-support/inquiry-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/customer-support/search-1-1-inquiries": [
+        "libs/saforus-bo/components/customer-support/search-1-1-inquiries/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/dashboard/common": [
+        "libs/saforus-bo/components/dashboard/common/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/dashboard/data": [
+        "libs/saforus-bo/components/dashboard/data/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/dashboard/filter": [
+        "libs/saforus-bo/components/dashboard/filter/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/dashboard/service-usage": [
+        "libs/saforus-bo/components/dashboard/service-usage/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/dashboard/user-overview": [
+        "libs/saforus-bo/components/dashboard/user-overview/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/dashboard/user-trend": [
+        "libs/saforus-bo/components/dashboard/user-trend/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/layouts/dialogs/logout-confirm-dialog": [
+        "libs/saforus-bo/components/layouts/dialogs/logout-confirm-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/layouts/dialogs/session-expired": [
+        "libs/saforus-bo/components/layouts/dialogs/session-expired/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/layouts/footer": [
+        "libs/saforus-bo/components/layouts/footer/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/layouts/main-layout": [
+        "libs/saforus-bo/components/layouts/main-layout/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/layouts/navbar": [
+        "libs/saforus-bo/components/layouts/navbar/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/layouts/public-layout": [
+        "libs/saforus-bo/components/layouts/public-layout/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/login-form/data": [
+        "libs/saforus-bo/components/login-form/data/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/login-form/login": [
+        "libs/saforus-bo/components/login-form/login/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/order-management/piracy-detection-requests/data": [
+        "libs/saforus-bo/components/order-management/piracy-detection-requests/data/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/order-management/piracy-detection-requests/dialogs/update-expert-detection": [
+        "libs/saforus-bo/components/order-management/piracy-detection-requests/dialogs/update-expert-detection/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/order-management/piracy-detection-requests/list": [
+        "libs/saforus-bo/components/order-management/piracy-detection-requests/list/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/order-management/piracy-detection-requests/order-detail": [
+        "libs/saforus-bo/components/order-management/piracy-detection-requests/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/order-management/piracy-detection-requests/search": [
+        "libs/saforus-bo/components/order-management/piracy-detection-requests/search/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/order-management/watermarking-orders/data": [
+        "libs/saforus-bo/components/order-management/watermarking-orders/data/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/order-management/watermarking-orders/download-files": [
+        "libs/saforus-bo/components/order-management/watermarking-orders/download-files/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/order-management/watermarking-orders/list": [
+        "libs/saforus-bo/components/order-management/watermarking-orders/list/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/order-management/watermarking-orders/order-detail": [
+        "libs/saforus-bo/components/order-management/watermarking-orders/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/order-management/watermarking-orders/search": [
+        "libs/saforus-bo/components/order-management/watermarking-orders/search/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/resetpassword": [
+        "libs/saforus-bo/components/resetpassword/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/service-management/create-notification/data": [
+        "libs/saforus-bo/components/service-management/create-notification/data/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/service-management/create-notification/form": [
+        "libs/saforus-bo/components/service-management/create-notification/form/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/service-management/create-notification/select-language": [
+        "libs/saforus-bo/components/service-management/create-notification/select-language/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/service-management/dialogs/incorrect-image-upload": [
+        "libs/saforus-bo/components/service-management/dialogs/incorrect-image-upload/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/service-management/edit-notification/data": [
+        "libs/saforus-bo/components/service-management/edit-notification/data/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/service-management/notification-list/data": [
+        "libs/saforus-bo/components/service-management/notification-list/data/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/service-management/notification-list/filter": [
+        "libs/saforus-bo/components/service-management/notification-list/filter/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/service-management/notification-list/list": [
+        "libs/saforus-bo/components/service-management/notification-list/list/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/service-management/notification-list/search": [
+        "libs/saforus-bo/components/service-management/notification-list/search/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/service-management/notification-preview": [
+        "libs/saforus-bo/components/service-management/notification-preview/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/settings/admin-user-management/data": [
+        "libs/saforus-bo/components/settings/admin-user-management/data/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/settings/admin-user-management/dialogs/add-admin-user": [
+        "libs/saforus-bo/components/settings/admin-user-management/dialogs/add-admin-user/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/settings/admin-user-management/dialogs/delete-admin-users": [
+        "libs/saforus-bo/components/settings/admin-user-management/dialogs/delete-admin-users/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/settings/admin-user-management/dialogs/update-admin-user": [
+        "libs/saforus-bo/components/settings/admin-user-management/dialogs/update-admin-user/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/settings/admin-user-management/list": [
+        "libs/saforus-bo/components/settings/admin-user-management/list/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/settings/admin-user-management/search": [
+        "libs/saforus-bo/components/settings/admin-user-management/search/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/user-management/search-user/data": [
+        "libs/saforus-bo/components/user-management/search-user/data/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/user-management/search-user/dialogs/delete-user-dialog": [
+        "libs/saforus-bo/components/user-management/search-user/dialogs/delete-user-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/user-management/search-user/dialogs/reset-password-dialog": [
+        "libs/saforus-bo/components/user-management/search-user/dialogs/reset-password-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/user-management/search-user/list": [
+        "libs/saforus-bo/components/user-management/search-user/list/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/user-management/search-user/search": [
+        "libs/saforus-bo/components/user-management/search-user/search/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/components/user-management/search-user/user-detail": [
+        "libs/saforus-bo/components/user-management/search-user/user-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/constants/routes": [
+        "libs/saforus-bo/constants/routes/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/constants/validation": [
+        "libs/saforus-bo/constants/validation/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/customer-support/inquiry-detail": [
+        "libs/saforus-bo/containers/customer-support/inquiry-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/customer-support/search-1-1-inquiries": [
+        "libs/saforus-bo/containers/customer-support/search-1-1-inquiries/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/dashboard/forensic-watermarking": [
+        "libs/saforus-bo/containers/dashboard/forensic-watermarking/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/login": [
+        "libs/saforus-bo/containers/login/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/order-management/piracy-detection-detail": [
+        "libs/saforus-bo/containers/order-management/piracy-detection-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/order-management/piracy-detection-requests": [
+        "libs/saforus-bo/containers/order-management/piracy-detection-requests/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/order-management/watermarking-detail": [
+        "libs/saforus-bo/containers/order-management/watermarking-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/order-management/watermarking-download-files": [
+        "libs/saforus-bo/containers/order-management/watermarking-download-files/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/order-management/watermarking-orders": [
+        "libs/saforus-bo/containers/order-management/watermarking-orders/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/resetpassword": [
+        "libs/saforus-bo/containers/resetpassword/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/service-management/create-notification/notification-form": [
+        "libs/saforus-bo/containers/service-management/create-notification/notification-form/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/service-management/create-notification/notification-preview": [
+        "libs/saforus-bo/containers/service-management/create-notification/notification-preview/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/service-management/edit-notification/notification-form": [
+        "libs/saforus-bo/containers/service-management/edit-notification/notification-form/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/service-management/edit-notification/notification-preview": [
+        "libs/saforus-bo/containers/service-management/edit-notification/notification-preview/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/service-management/notification/filterer": [
+        "libs/saforus-bo/containers/service-management/notification/filterer/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/service-management/notification/list": [
+        "libs/saforus-bo/containers/service-management/notification/list/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/service-management/notification/search": [
+        "libs/saforus-bo/containers/service-management/notification/search/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/settings/admin-user-management": [
+        "libs/saforus-bo/containers/settings/admin-user-management/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/user-management/search-and-list": [
+        "libs/saforus-bo/containers/user-management/search-and-list/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/containers/user-management/user-detail": [
+        "libs/saforus-bo/containers/user-management/user-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/admin-dashboard/forensic-watermarking": [
+        "libs/saforus-bo/pages/admin-dashboard/forensic-watermarking/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/customer-support/inquiry-detail": [
+        "libs/saforus-bo/pages/customer-support/inquiry-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/customer-support/search-1-1-inquiries": [
+        "libs/saforus-bo/pages/customer-support/search-1-1-inquiries/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/customer-support/search-users": [
+        "libs/saforus-bo/pages/customer-support/search-users/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/login": [
+        "libs/saforus-bo/pages/login/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/order-management/piracy-detection-detail": [
+        "libs/saforus-bo/pages/order-management/piracy-detection-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/order-management/piracy-detection-requests": [
+        "libs/saforus-bo/pages/order-management/piracy-detection-requests/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/order-management/watermarking-detail": [
+        "libs/saforus-bo/pages/order-management/watermarking-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/order-management/watermarking-download-files": [
+        "libs/saforus-bo/pages/order-management/watermarking-download-files/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/order-management/watermarking-orders": [
+        "libs/saforus-bo/pages/order-management/watermarking-orders/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/resetpassword": [
+        "libs/saforus-bo/pages/resetpassword/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/service-configuration/forensic-watermarking": [
+        "libs/saforus-bo/pages/service-configuration/forensic-watermarking/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/service-configuration/inquiry": [
+        "libs/saforus-bo/pages/service-configuration/inquiry/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/service-configuration/piracy-detection": [
+        "libs/saforus-bo/pages/service-configuration/piracy-detection/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/service-configuration/service-plan-manager": [
+        "libs/saforus-bo/pages/service-configuration/service-plan-manager/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/service-management/create-notification": [
+        "libs/saforus-bo/pages/service-management/create-notification/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/service-management/edit-notification": [
+        "libs/saforus-bo/pages/service-management/edit-notification/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/service-management/notification-list": [
+        "libs/saforus-bo/pages/service-management/notification-list/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/settings/admin-user-management": [
+        "libs/saforus-bo/pages/settings/admin-user-management/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/user-management/search-and-list": [
+        "libs/saforus-bo/pages/user-management/search-and-list/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/user-management/search-team-and-members": [
+        "libs/saforus-bo/pages/user-management/search-team-and-members/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/pages/user-management/user-detail": [
+        "libs/saforus-bo/pages/user-management/user-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus-bo/themes": [
+        "libs/saforus-bo/themes/src/index.ts"
+      ],
+      "@web-workspace/saforus/app-routes": [
+        "libs/saforus/app-routes/src/index.ts"
+      ],
+      "@web-workspace/saforus/common/data": [
+        "libs/saforus/common/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/common/model": [
+        "libs/saforus/common/model/src/index.ts"
+      ],
+      "@web-workspace/saforus/common/utils": [
+        "libs/saforus/common/utils/src/index.ts"
+      ],
+      "@web-workspace/saforus/common/views": [
+        "libs/saforus/common/views/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/dashboard/service-usage/billing-overview": [
+        "libs/saforus/components/dashboard/service-usage/billing-overview/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/dashboard/service-usage/common": [
+        "libs/saforus/components/dashboard/service-usage/common/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/dashboard/service-usage/data": [
+        "libs/saforus/components/dashboard/service-usage/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/dashboard/service-usage/service-usage": [
+        "libs/saforus/components/dashboard/service-usage/service-usage/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/dashboard/service-usage/toggle-button": [
+        "libs/saforus/components/dashboard/service-usage/toggle-button/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/dashboard/service-usage/usage-by-period": [
+        "libs/saforus/components/dashboard/service-usage/usage-by-period/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/dashboard/view-order/data": [
+        "libs/saforus/components/dashboard/view-order/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/dashboard/view-order/order-list": [
+        "libs/saforus/components/dashboard/view-order/order-list/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/dashboard/view-order/order-piracy-list": [
+        "libs/saforus/components/dashboard/view-order/order-piracy-list/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/dashboard/view-order/order-search": [
+        "libs/saforus/components/dashboard/view-order/order-search/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/expired-view": [
+        "libs/saforus/components/expired-view/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking-v2/common": [
+        "libs/saforus/components/forensic-watermarking-v2/common/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking-v2/create": [
+        "libs/saforus/components/forensic-watermarking-v2/create/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking-v2/data": [
+        "libs/saforus/components/forensic-watermarking-v2/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking-v2/order-detail": [
+        "libs/saforus/components/forensic-watermarking-v2/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking-v2/view-order/data": [
+        "libs/saforus/components/forensic-watermarking-v2/view-order/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking-v2/view-order/order-list": [
+        "libs/saforus/components/forensic-watermarking-v2/view-order/order-list/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking-v2/view-order/order-search": [
+        "libs/saforus/components/forensic-watermarking-v2/view-order/order-search/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking/breadcrumb": [
+        "libs/saforus/components/forensic-watermarking/breadcrumb/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking/dialogs/confirm-dialog": [
+        "libs/saforus/components/forensic-watermarking/dialogs/confirm-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking/dialogs/continue-dialog": [
+        "libs/saforus/components/forensic-watermarking/dialogs/continue-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking/dialogs/link-expired-dialog": [
+        "libs/saforus/components/forensic-watermarking/dialogs/link-expired-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking/dialogs/share-dialog": [
+        "libs/saforus/components/forensic-watermarking/dialogs/share-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking/dialogs/submit-error-dialog": [
+        "libs/saforus/components/forensic-watermarking/dialogs/submit-error-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking/dialogs/warning-files-length": [
+        "libs/saforus/components/forensic-watermarking/dialogs/warning-files-length/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking/download-files": [
+        "libs/saforus/components/forensic-watermarking/download-files/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking/order-detail": [
+        "libs/saforus/components/forensic-watermarking/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking/view-order": [
+        "libs/saforus/components/forensic-watermarking/view-order/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/forensic-watermarking/view-order/data": [
+        "libs/saforus/components/forensic-watermarking/view-order/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/help/create-inquiry-auth": [
+        "libs/saforus/components/help/create-inquiry-auth/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/help/data": [
+        "libs/saforus/components/help/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/help/dialogs/cancel-inquiry": [
+        "libs/saforus/components/help/dialogs/cancel-inquiry/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/help/inquiry": [
+        "libs/saforus/components/help/inquiry/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/help/inquiry-detail": [
+        "libs/saforus/components/help/inquiry-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/help/views": [
+        "libs/saforus/components/help/views/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/home": [
+        "libs/saforus/components/home/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/dialogs/announcement-dialog": [
+        "libs/saforus/components/layouts/dialogs/announcement-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/dialogs/expired-token-dialog": [
+        "libs/saforus/components/layouts/dialogs/expired-token-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/dialogs/inactive-dialog": [
+        "libs/saforus/components/layouts/dialogs/inactive-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/dialogs/logout-confirm-dialog": [
+        "libs/saforus/components/layouts/dialogs/logout-confirm-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/dialogs/notification/data": [
+        "libs/saforus/components/layouts/dialogs/notification/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/dialogs/notification/dialog": [
+        "libs/saforus/components/layouts/dialogs/notification/dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/dialogs/session-24-time-out-dialog": [
+        "libs/saforus/components/layouts/dialogs/session-24-time-out-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/hook-use-set-expried-time": [
+        "libs/saforus/components/layouts/hook-use-set-expried-time/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/main-layout": [
+        "libs/saforus/components/layouts/main-layout/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/navbar": [
+        "libs/saforus/components/layouts/navbar/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/notification-banner": [
+        "libs/saforus/components/layouts/notification-banner/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/layouts/side-menu": [
+        "libs/saforus/components/layouts/side-menu/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/login/form": [
+        "libs/saforus/components/login/form/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/create-order/configs": [
+        "libs/saforus/components/multi-drm/create-order/configs/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/create-order/data": [
+        "libs/saforus/components/multi-drm/create-order/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/create-order/dialogs/cancel-order": [
+        "libs/saforus/components/multi-drm/create-order/dialogs/cancel-order/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/create-order/my-storage": [
+        "libs/saforus/components/multi-drm/create-order/my-storage/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/create-order/output-streaming": [
+        "libs/saforus/components/multi-drm/create-order/output-streaming/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/create-order/packaging-option": [
+        "libs/saforus/components/multi-drm/create-order/packaging-option/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/create-order/stepper": [
+        "libs/saforus/components/multi-drm/create-order/stepper/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/create-order/submit-order": [
+        "libs/saforus/components/multi-drm/create-order/submit-order/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/order-detail": [
+        "libs/saforus/components/multi-drm/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/packaging-configuration": [
+        "libs/saforus/components/multi-drm/packaging-configuration/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/view-order/data": [
+        "libs/saforus/components/multi-drm/view-order/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/view-order/order-list": [
+        "libs/saforus/components/multi-drm/view-order/order-list/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/multi-drm/view-order/order-search": [
+        "libs/saforus/components/multi-drm/view-order/order-search/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/piracy-detection/confirm-dialog": [
+        "libs/saforus/components/piracy-detection/confirm-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/piracy-detection/create-new-request": [
+        "libs/saforus/components/piracy-detection/create-new-request/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/piracy-detection/delete-detection-order-dialog": [
+        "libs/saforus/components/piracy-detection/delete-detection-order-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/piracy-detection/find-order-number-data": [
+        "libs/saforus/components/piracy-detection/find-order-number-data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/piracy-detection/find-order-number-dialog": [
+        "libs/saforus/components/piracy-detection/find-order-number-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/piracy-detection/select-order-image-dialog": [
+        "libs/saforus/components/piracy-detection/select-order-image-dialog/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/piracy-detection/view-order/data": [
+        "libs/saforus/components/piracy-detection/view-order/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/piracy-detection/view-order/order-detail": [
+        "libs/saforus/components/piracy-detection/view-order/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/piracy-detection/view-order/order-list": [
+        "libs/saforus/components/piracy-detection/view-order/order-list/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/piracy-detection/view-order/order-search": [
+        "libs/saforus/components/piracy-detection/view-order/order-search/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/register-completed": [
+        "libs/saforus/components/register-completed/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/register-done": [
+        "libs/saforus/components/register-done/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/register/form": [
+        "libs/saforus/components/register/form/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/reset-account-password": [
+        "libs/saforus/components/reset-account-password/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/reset-password-done": [
+        "libs/saforus/components/reset-password-done/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/resetpassword/dialogs/sent-reset": [
+        "libs/saforus/components/resetpassword/dialogs/sent-reset/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/resetpassword/form": [
+        "libs/saforus/components/resetpassword/form/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/my-account/data": [
+        "libs/saforus/components/settings/my-account/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/sites/data": [
+        "libs/saforus/components/settings/sites/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/sites/dialogs/create-site": [
+        "libs/saforus/components/settings/sites/dialogs/create-site/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/sites/dialogs/delete-site": [
+        "libs/saforus/components/settings/sites/dialogs/delete-site/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/sites/dialogs/delete-storage": [
+        "libs/saforus/components/settings/sites/dialogs/delete-storage/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/sites/site-detail": [
+        "libs/saforus/components/settings/sites/site-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/sites/sites-empty-list": [
+        "libs/saforus/components/settings/sites/sites-empty-list/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/sites/sites-list": [
+        "libs/saforus/components/settings/sites/sites-list/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/sites/storage-detail": [
+        "libs/saforus/components/settings/sites/storage-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/sites/storage-empty-list": [
+        "libs/saforus/components/settings/sites/storage-empty-list/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/sites/storage-form": [
+        "libs/saforus/components/settings/sites/storage-form/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/settings/sites/storage-list": [
+        "libs/saforus/components/settings/sites/storage-list/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/admin-user-credit/data": [
+        "libs/saforus/components/user-info/admin-user-credit/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/admin-user-credit/user-credit-list": [
+        "libs/saforus/components/user-info/admin-user-credit/user-credit-list/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/admin-user-credit/versions": [
+        "libs/saforus/components/user-info/admin-user-credit/versions/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/billing-details/data": [
+        "libs/saforus/components/user-info/billing-details/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/billing-details/dialogs/update-billing-address": [
+        "libs/saforus/components/user-info/billing-details/dialogs/update-billing-address/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/billing-details/history": [
+        "libs/saforus/components/user-info/billing-details/history/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/billing-details/info": [
+        "libs/saforus/components/user-info/billing-details/info/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/billing-details/plan-info": [
+        "libs/saforus/components/user-info/billing-details/plan-info/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/billing-details/search": [
+        "libs/saforus/components/user-info/billing-details/search/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/billing-details/table": [
+        "libs/saforus/components/user-info/billing-details/table/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/cancel-subscription": [
+        "libs/saforus/components/user-info/cancel-subscription/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/monthly-usage": [
+        "libs/saforus/components/user-info/monthly-usage/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/company-info": [
+        "libs/saforus/components/user-info/my-account/company-info/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/data": [
+        "libs/saforus/components/user-info/my-account/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/delete-account": [
+        "libs/saforus/components/user-info/my-account/delete-account/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/dialogs/avatar-editor": [
+        "libs/saforus/components/user-info/my-account/dialogs/avatar-editor/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/dialogs/cancel-change-avatar": [
+        "libs/saforus/components/user-info/my-account/dialogs/cancel-change-avatar/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/dialogs/change-password": [
+        "libs/saforus/components/user-info/my-account/dialogs/change-password/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/dialogs/change-password-success": [
+        "libs/saforus/components/user-info/my-account/dialogs/change-password-success/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/dialogs/current-password": [
+        "libs/saforus/components/user-info/my-account/dialogs/current-password/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/dialogs/delete-confirmation": [
+        "libs/saforus/components/user-info/my-account/dialogs/delete-confirmation/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/dialogs/incorrect-password": [
+        "libs/saforus/components/user-info/my-account/dialogs/incorrect-password/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/email-subscription": [
+        "libs/saforus/components/user-info/my-account/email-subscription/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/language-region": [
+        "libs/saforus/components/user-info/my-account/language-region/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/login-info": [
+        "libs/saforus/components/user-info/my-account/login-info/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/my-account/team-infomation": [
+        "libs/saforus/components/user-info/my-account/team-infomation/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/service-plan-billing/data": [
+        "libs/saforus/components/user-info/service-plan-billing/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/service-plan-billing/dialogs/logout-on-subscribe-success": [
+        "libs/saforus/components/user-info/service-plan-billing/dialogs/logout-on-subscribe-success/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/service-plan-billing/service-plan": [
+        "libs/saforus/components/user-info/service-plan-billing/service-plan/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/team-member/data": [
+        "libs/saforus/components/user-info/team-member/data/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/team-member/dialogs/accept-invitation": [
+        "libs/saforus/components/user-info/team-member/dialogs/accept-invitation/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/team-member/dialogs/change-team-owner": [
+        "libs/saforus/components/user-info/team-member/dialogs/change-team-owner/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/team-member/dialogs/confirm-invitation": [
+        "libs/saforus/components/user-info/team-member/dialogs/confirm-invitation/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/team-member/dialogs/create-team": [
+        "libs/saforus/components/user-info/team-member/dialogs/create-team/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/team-member/dialogs/invite-member": [
+        "libs/saforus/components/user-info/team-member/dialogs/invite-member/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/team-member/dialogs/remove-team": [
+        "libs/saforus/components/user-info/team-member/dialogs/remove-team/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/team-member/dialogs/remove-team-member": [
+        "libs/saforus/components/user-info/team-member/dialogs/remove-team-member/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/team-member/team-detail": [
+        "libs/saforus/components/user-info/team-member/team-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/team-member/team-member-info": [
+        "libs/saforus/components/user-info/team-member/team-member-info/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/user-info/user-feedback": [
+        "libs/saforus/components/user-info/user-feedback/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/verify-email": [
+        "libs/saforus/components/verify-email/src/index.ts"
+      ],
+      "@web-workspace/saforus/components/watermarking-download": [
+        "libs/saforus/components/watermarking-download/src/index.ts"
+      ],
+      "@web-workspace/saforus/conatiners/help/inquiry-detail": [
+        "libs/saforus/conatiners/help/inquiry-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/constants/routes": [
+        "libs/saforus/constants/routes/src/index.ts"
+      ],
+      "@web-workspace/saforus/constants/validation": [
+        "libs/saforus/constants/validation/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/dashboard/service-usage": [
+        "libs/saforus/containers/dashboard/service-usage/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/dashboard/view-order": [
+        "libs/saforus/containers/dashboard/view-order/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/dynamic-metatag": [
+        "libs/saforus/containers/dynamic-metatag/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/forensic-watermarking/create": [
+        "libs/saforus/containers/forensic-watermarking/create/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/forensic-watermarking/download-files": [
+        "libs/saforus/containers/forensic-watermarking/download-files/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/forensic-watermarking/order-detail": [
+        "libs/saforus/containers/forensic-watermarking/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/forensic-watermarking/view-order": [
+        "libs/saforus/containers/forensic-watermarking/view-order/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/help/create-inquiry-auth": [
+        "libs/saforus/containers/help/create-inquiry-auth/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/help/inquiry": [
+        "libs/saforus/containers/help/inquiry/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/help/inquiry-detail": [
+        "libs/saforus/containers/help/inquiry-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/help/main": [
+        "libs/saforus/containers/help/main/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/home": [
+        "libs/saforus/containers/home/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/login": [
+        "libs/saforus/containers/login/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/multi-drm/create-order": [
+        "libs/saforus/containers/multi-drm/create-order/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/multi-drm/order-detail": [
+        "libs/saforus/containers/multi-drm/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/multi-drm/packaging-configuration": [
+        "libs/saforus/containers/multi-drm/packaging-configuration/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/multi-drm/view-orders": [
+        "libs/saforus/containers/multi-drm/view-orders/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/piracy-detection/create-new-request": [
+        "libs/saforus/containers/piracy-detection/create-new-request/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/piracy-detection/order-detail": [
+        "libs/saforus/containers/piracy-detection/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/piracy-detection/view-order": [
+        "libs/saforus/containers/piracy-detection/view-order/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/register": [
+        "libs/saforus/containers/register/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/register-completed": [
+        "libs/saforus/containers/register-completed/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/register-done": [
+        "libs/saforus/containers/register-done/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/reset-account-password": [
+        "libs/saforus/containers/reset-account-password/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/reset-password-done": [
+        "libs/saforus/containers/reset-password-done/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/resetpassword": [
+        "libs/saforus/containers/resetpassword/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/settings/sites": [
+        "libs/saforus/containers/settings/sites/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/user-info/bill-detail": [
+        "libs/saforus/containers/user-info/bill-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/user-info/billing-detail": [
+        "libs/saforus/containers/user-info/billing-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/user-info/monthly-usage": [
+        "libs/saforus/containers/user-info/monthly-usage/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/user-info/my-account": [
+        "libs/saforus/containers/user-info/my-account/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/user-info/service-plan": [
+        "libs/saforus/containers/user-info/service-plan/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/user-info/team-member/team-detail": [
+        "libs/saforus/containers/user-info/team-member/team-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/user-info/team-member/team-member-info": [
+        "libs/saforus/containers/user-info/team-member/team-member-info/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/user-info/user-credits": [
+        "libs/saforus/containers/user-info/user-credits/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/verify-email": [
+        "libs/saforus/containers/verify-email/src/index.ts"
+      ],
+      "@web-workspace/saforus/containers/watermarking-download": [
+        "libs/saforus/containers/watermarking-download/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/api-doc": [
+        "libs/saforus/pages/api-doc/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/dashboard/service-usage": [
+        "libs/saforus/pages/dashboard/service-usage/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/dashboard/view-order": [
+        "libs/saforus/pages/dashboard/view-order/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/forensic-watermarking/create": [
+        "libs/saforus/pages/forensic-watermarking/create/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/forensic-watermarking/download-files": [
+        "libs/saforus/pages/forensic-watermarking/download-files/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/forensic-watermarking/order-detail": [
+        "libs/saforus/pages/forensic-watermarking/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/forensic-watermarking/view-order": [
+        "libs/saforus/pages/forensic-watermarking/view-order/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/help/create-inquiry-auth": [
+        "libs/saforus/pages/help/create-inquiry-auth/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/help/inquiry": [
+        "libs/saforus/pages/help/inquiry/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/help/inquiry-detail": [
+        "libs/saforus/pages/help/inquiry-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/help/main": [
+        "libs/saforus/pages/help/main/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/home": [
+        "libs/saforus/pages/home/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/login": [
+        "libs/saforus/pages/login/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/multi-drm/create-order": [
+        "libs/saforus/pages/multi-drm/create-order/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/multi-drm/order-detail": [
+        "libs/saforus/pages/multi-drm/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/multi-drm/packaging-configuration": [
+        "libs/saforus/pages/multi-drm/packaging-configuration/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/multi-drm/view-orders": [
+        "libs/saforus/pages/multi-drm/view-orders/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/notfound": [
+        "libs/saforus/pages/notfound/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/piracy-detection/create-new-request": [
+        "libs/saforus/pages/piracy-detection/create-new-request/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/piracy-detection/order-detail": [
+        "libs/saforus/pages/piracy-detection/order-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/piracy-detection/view-order": [
+        "libs/saforus/pages/piracy-detection/view-order/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/register": [
+        "libs/saforus/pages/register/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/register-completed": [
+        "libs/saforus/pages/register-completed/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/register-done": [
+        "libs/saforus/pages/register-done/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/reset-account-password": [
+        "libs/saforus/pages/reset-account-password/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/reset-password-done": [
+        "libs/saforus/pages/reset-password-done/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/resetpassword": [
+        "libs/saforus/pages/resetpassword/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/settings/sites": [
+        "libs/saforus/pages/settings/sites/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/user-info/admin-user-credit": [
+        "libs/saforus/pages/user-info/admin-user-credit/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/user-info/billing-detail": [
+        "libs/saforus/pages/user-info/billing-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/user-info/monthly-usage": [
+        "libs/saforus/pages/user-info/monthly-usage/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/user-info/my-account": [
+        "libs/saforus/pages/user-info/my-account/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/user-info/service-plan": [
+        "libs/saforus/pages/user-info/service-plan/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/user-info/team-member/team-detail": [
+        "libs/saforus/pages/user-info/team-member/team-detail/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/user-info/team-member/team-member-info": [
+        "libs/saforus/pages/user-info/team-member/team-member-info/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/verify-email": [
+        "libs/saforus/pages/verify-email/src/index.ts"
+      ],
+      "@web-workspace/saforus/pages/watermarking-download": [
+        "libs/saforus/pages/watermarking-download/src/index.ts"
+      ],
+      "@web-workspace/saforus/themes": ["libs/saforus/themes/src/index.ts"],
+      "@web-workspace/shared/analytics": ["libs/shared/analytics/src/index.ts"],
+      "@web-workspace/shared/api/http-client": [
+        "libs/shared/api/http-client/src/index.ts"
+      ],
+      "@web-workspace/shared/components/dialogs/cancel": [
+        "libs/shared/components/dialogs/cancel/src/index.ts"
+      ],
+      "@web-workspace/shared/components/dialogs/request-limit": [
+        "libs/shared/components/dialogs/request-limit/src/index.ts"
+      ],
+      "@web-workspace/shared/components/dialogs/storage-limit": [
+        "libs/shared/components/dialogs/storage-limit/src/index.ts"
+      ],
+      "@web-workspace/shared/components/dialogs/contact-support": [
+        "libs/shared/components/dialogs/contact-support/src/index.ts"
+      ],
+      "@web-workspace/shared/components/dialogs/error": [
+        "libs/shared/components/dialogs/error/src/index.ts"
+      ],
+      "@web-workspace/shared/components/dialogs/failure": [
+        "libs/shared/components/dialogs/failure/src/index.ts"
+      ],
+      "@web-workspace/shared/components/dialogs/global": [
+        "libs/shared/components/dialogs/global/src/index.ts"
+      ],
+      "@web-workspace/shared/components/dialogs/loading": [
+        "libs/shared/components/dialogs/loading/src/index.ts"
+      ],
+      "@web-workspace/shared/components/dialogs/logout-confirmation": [
+        "libs/shared/components/dialogs/logout-confirmation/src/index.ts"
+      ],
+      "@web-workspace/shared/components/dialogs/store": [
+        "libs/shared/components/dialogs/store/src/index.ts"
+      ],
+      "@web-workspace/shared/components/dialogs/success": [
+        "libs/shared/components/dialogs/success/src/index.ts"
+      ],
+      "@web-workspace/shared/components/hocs/with-auth": [
+        "libs/shared/components/hocs/with-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/components/hocs/with-bo-auth": [
+        "libs/shared/components/hocs/with-bo-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/components/hocs/with-csapi-auth": [
+        "libs/shared/components/hocs/with-csapi-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/components/hocs/with-csapi-bo-auth": [
+        "libs/shared/components/hocs/with-csapi-bo-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/components/hocs/with-not-auth": [
+        "libs/shared/components/hocs/with-not-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/components/hocs/with-not-bo-auth": [
+        "libs/shared/components/hocs/with-not-bo-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/components/hocs/with-not-csapi-auth": [
+        "libs/shared/components/hocs/with-not-csapi-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/components/hocs/with-not-csapi-bo-auth": [
+        "libs/shared/components/hocs/with-not-csapi-bo-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/components/hocs/with-subscription": [
+        "libs/shared/components/hocs/with-subscription/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/autocomplete": [
+        "libs/shared/components/widgets/autocomplete/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/autocomplete-toggle": [
+        "libs/shared/components/widgets/autocomplete-toggle/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/avatar": [
+        "libs/shared/components/widgets/avatar/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/button": [
+        "libs/shared/components/widgets/button/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/circular-progress": [
+        "libs/shared/components/widgets/circular-progress/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/content-label": [
+        "libs/shared/components/widgets/content-label/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/date-picker": [
+        "libs/shared/components/widgets/date-picker/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/date-range-picker": [
+        "libs/shared/components/widgets/date-range-picker/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/dialog": [
+        "libs/shared/components/widgets/dialog/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/file-item": [
+        "libs/shared/components/widgets/file-item/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/file-upload": [
+        "libs/shared/components/widgets/file-upload/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/icon": [
+        "libs/shared/components/widgets/icon/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/image-or-tiff": [
+        "libs/shared/components/widgets/image-or-tiff/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/image-preview": [
+        "libs/shared/components/widgets/image-preview/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/input": [
+        "libs/shared/components/widgets/input/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/input-button": [
+        "libs/shared/components/widgets/input-button/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/input-toggle": [
+        "libs/shared/components/widgets/input-toggle/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/langmenu": [
+        "libs/shared/components/widgets/langmenu/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/loading-button": [
+        "libs/shared/components/widgets/loading-button/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/loading-indicator": [
+        "libs/shared/components/widgets/loading-indicator/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/loading-overlay": [
+        "libs/shared/components/widgets/loading-overlay/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/media-preview": [
+        "libs/shared/components/widgets/media-preview/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/preview-pdf": [
+        "libs/shared/components/widgets/preview-pdf/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/progess-bar": [
+        "libs/shared/components/widgets/progess-bar/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/progress-bar-label": [
+        "libs/shared/components/widgets/progress-bar-label/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/select": [
+        "libs/shared/components/widgets/select/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/select-country": [
+        "libs/shared/components/widgets/select-country/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/table": [
+        "libs/shared/components/widgets/table/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/text-editor": [
+        "libs/shared/components/widgets/text-editor/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/time-picker": [
+        "libs/shared/components/widgets/time-picker/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/toast": [
+        "libs/shared/components/widgets/toast/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/tooltip": [
+        "libs/shared/components/widgets/tooltip/src/index.ts"
+      ],
+      "@web-workspace/shared/components/widgets/vertical-image-slider": [
+        "libs/shared/components/widgets/vertical-image-slider/src/index.ts"
+      ],
+      "@web-workspace/shared/feature-flag": [
+        "libs/shared/feature-flag/src/index.ts"
+      ],
+      "@web-workspace/shared/helpers/dates": [
+        "libs/shared/helpers/dates/src/index.ts"
+      ],
+      "@web-workspace/shared/helpers/environment-variables": [
+        "libs/shared/helpers/environment-variables/src/index.ts"
+      ],
+      "@web-workspace/shared/helpers/files/download-file": [
+        "libs/shared/helpers/files/download-file/src/index.ts"
+      ],
+      "@web-workspace/shared/helpers/firebase": [
+        "libs/shared/helpers/firebase/src/index.ts"
+      ],
+      "@web-workspace/shared/helpers/format": [
+        "libs/shared/helpers/format/src/index.ts"
+      ],
+      "@web-workspace/shared/helpers/layout/dialogs/session-expired": [
+        "libs/shared/helpers/layout/dialogs/session-expired/src/index.ts"
+      ],
+      "@web-workspace/shared/helpers/layout/store": [
+        "libs/shared/helpers/layout/store/src/index.ts"
+      ],
+      "@web-workspace/shared/helpers/multiple-language": [
+        "libs/shared/helpers/multiple-language/src/index.ts"
+      ],
+      "@web-workspace/shared/helpers/payment": [
+        "libs/shared/helpers/payment/src/index.ts"
+      ],
+      "@web-workspace/shared/helpers/routes": [
+        "libs/shared/helpers/routes/src/index.ts"
+      ],
+      "@web-workspace/shared/helpers/strings": [
+        "libs/shared/helpers/strings/src/index.ts"
+      ],
+      "@web-workspace/shared/hooks/use-auth": [
+        "libs/shared/hooks/use-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/hooks/use-bo-auth": [
+        "libs/shared/hooks/use-bo-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/hooks/use-csapi-auth": [
+        "libs/shared/hooks/use-csapi-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/hooks/use-csapi-bo-auth": [
+        "libs/shared/hooks/use-csapi-bo-auth/src/index.ts"
+      ],
+      "@web-workspace/shared/hooks/use-subscription": [
+        "libs/shared/hooks/use-subscription/src/index.ts"
+      ],
+      "@web-workspace/shared/i18n": ["libs/shared/i18n/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

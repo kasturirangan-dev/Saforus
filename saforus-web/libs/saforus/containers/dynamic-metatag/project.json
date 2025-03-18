@@ -1,0 +1,18 @@
+{
+  "name": "saforus-containers-dynamic-metatag",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus/containers/dynamic-metatag/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus/containers/dynamic-metatag/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

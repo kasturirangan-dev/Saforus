@@ -1,0 +1,118 @@
+const myaccount = {
+  title: 'My Account',
+  'recent-session': 'Recent session',
+  'recent-session-timeformat': 'MMM d, yyyy h:mm a',
+  'login-information': {
+    title: 'Login Information',
+    name: 'Name*',
+    'login-account': 'Login Account*',
+    'change-password': 'Change Password',
+    'mobile-number': 'Mobile Number*',
+    'mobile-number-required': 'Mobile Number is required',
+    'company-name': 'Company Name*',
+    'company-name-required': 'Company Name is required',
+    'company-url': 'Company URL',
+    'country-incorporation': 'Country of Incorporation*',
+    dialog: {
+      'avatar-title': 'Profile Image',
+      'avatar-description':
+        "recognize you and make sure you're logged in to your account.",
+      'avatar-requirement': 'Max to 5MB',
+      'avatar-upload-title': 'Profile Image',
+      'avatar-edit-title': 'Image Crop & Rotate',
+      'drag-here': 'Drag a picture here',
+      'capacity-error-upload-a': 'Failed to load picture.',
+      'capacity-error-upload-b': 'Please upload a picture of size 5MB or less',
+      uploading: 'Uploading',
+      saving: 'Saving',
+      saved: 'Saved',
+      'cancel-title': 'Cancel changes?',
+      'cancel-description':
+        'Your changes will not be saved. \n Do you still want to leave?',
+      or: 'Or',
+      'drop-here': 'Drop your image here',
+      'delete-title': 'Delete image?',
+      'delete-description':
+        'Deleting your image is permanent. A default image will replace your profile picture. \n Do you still want to proceed?',
+    },
+    button: {
+      'import-from-computer': 'Import from Computer',
+      rotate: 'Rotate',
+      edit: 'Edit',
+      'edit-image': 'Edit',
+      'change-image': 'Change Image',
+      upload: 'Click to upload',
+      cancel: 'Cancel',
+      no: 'No',
+    },
+  },
+  'company-information': {
+    title: 'Company Information',
+    'company-name': 'Company Name*',
+    'country-incorporation': 'Country of Incorporation*',
+    'company-url': 'Company URL',
+    'zip-code': 'Zip/Postal Code',
+    'street-address': 'Street Address',
+    city: 'City',
+    'state-province': 'State / Province',
+  },
+  'team-information': {
+    title: 'Team Information',
+    'team-member': 'Team & Members',
+    'team-name': 'Team Name',
+    'team-owner': 'Team Owner',
+    'team-service-plan': 'Team Service Plan*',
+    'team-description': 'Team Description',
+  },
+  'email-subscription': {
+    title: 'Email Subscription',
+    email: 'Email',
+    confirm:
+      'I agree to receive advertising and marketing promotional emails from SaForus',
+    subscribe:
+      'You have agreed to receive advertising and marketing promotional emails on %{date} ',
+    unsubscribe:
+      'You have refused to receive advertising and marketing promotional emails on %{date} ',
+  },
+  'language-and-region': {
+    title: 'Language and region',
+    language: 'Language',
+    'time-zone': 'Time Zone',
+  },
+  'delete-account': {
+    title: 'Delete Account',
+    'sub-title': 'Please contact Customer Support to delete your account.',
+    contact: 'Contact Customer Support',
+  },
+  'change-password': {
+    title: 'Change Password',
+    'current-password': 'Current Password',
+    'current-password-placeholder': 'Enter current password',
+    'new-password': 'New Password',
+    'new-password-placeholder': 'Enter new password',
+    'confirm-password': 'Confirm Password',
+    'confirm-password-placeholder': 'Enter confirm password',
+    'forgot-pass': 'Forgot Password?',
+    dialogs: {
+      'success-title': 'Password changed!',
+      'success-description': 'Your password has been changed successfully.',
+      'incorrect-title': 'Incorrect Password',
+      'incorrect-description':
+        'Too many incorrect password attempts. \n You’ll be logged out in %{count} seconds.',
+      'verify-description': 'To continue, first verify it’s you!',
+      'change-description': 'Choose a strong password',
+    },
+    'change-password-success': 'Password changed successfully!',
+    'change-password-fail': 'Password changed failed!',
+    cancel: 'Cancel',
+    continue: 'Continue',
+    change: 'Change',
+  },
+  avatar: {
+    sucessUpload: 'Profile image updated successfully!',
+    failUpload: 'Failed to upload the image. Please try again!',
+    sucessDelete: 'Deleted avatar successfully!',
+  },
+};
+
+export { myaccount };

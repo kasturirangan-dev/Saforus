@@ -1,0 +1,114 @@
+.custom-toast-message {
+  width: auto;
+  display: flex;
+  align-items: center;
+  background: var(--toastify-color-light);
+  color: var(--toastify-text-color-light);
+
+  position: relative;
+  min-height: var(--toastify-toast-min-height);
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+  justify-content: space-between;
+  max-height: var(--toastify-toast-max-height);
+  overflow: hidden;
+  font-family: var(--toastify-font-family);
+  cursor: default;
+  direction: ltr;
+  z-index: 0;
+  white-space: pre-wrap;
+  div {
+    margin: 0;
+    gap: 1rem;
+  }
+}
+.error-toast {
+  border: 1.5px solid var(--red-300);
+  background-color: var(--red-25);
+  color: var(--gray-700);
+}
+.success-toast {
+  border: 1.5px solid var(--green-700);
+  background-color: var(--green-25);
+  color: var(--gray-700);
+}
+.base-toast {
+  // width: auto;
+  margin-top: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-toast-message .icon {
+  margin-right: 10rem;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+  .custom-toast-message {
+    width: fit-content;
+    max-width: '100%';
+  }
+  .base-toast {
+    width: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .custom-toast-message {
+    width: fit-content;
+    max-width: 100%;
+  }
+  .base-toast {
+    width: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .custom-toast-message {
+    width: fit-content;
+    max-width: 50vw;
+    font-size: medium;
+  }
+  .base-toast {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .custom-toast-message {
+    width: fit-content;
+    max-width: 50vw;
+    font-size: medium;
+  }
+  .base-toast {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .custom-toast-message {
+    width: fit-content;
+    max-width: 760px;
+    font-size: larger;
+  }
+  .base-toast {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .custom-toast-message {
+    width: fit-content;
+    max-width: 760px;
+    font-size: x-large;
+  }
+  .base-toast {
+    width: auto;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "shared-helpers-environment-variables",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/helpers/environment-variables/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/helpers/environment-variables/**/*.ts"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

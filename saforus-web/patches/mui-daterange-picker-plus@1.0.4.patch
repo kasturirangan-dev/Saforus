@@ -1,0 +1,610 @@
+diff --git a/dist/index.js b/dist/index.js
+index 442a584c91560be90e4a47ade4d295c5f78b78b3..9e79c2487ce80ecc1f5c5e4c56a379cea6b7188a 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -744,7 +744,7 @@ var Actions = ({ onCloseCallback, onSubmit }) => {
+         variant: "contained",
+         color: "primary",
+         onClick: onSubmit,
+-        children: "Apply Range"
++        children: "Apply"
+       }
+     ) })
+   ] });
+diff --git a/dist/index.mjs b/dist/index.mjs
+index e4be265c5cc98b8d0efe7dc96378cb7228748ecd..f8c0750b70e653051cb5e39bb94253b1b2b3ec31 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -487,56 +487,72 @@ var Day = ({
+   onClick,
+   onHover,
+   value,
+-  hideOutsideMonthDays = true
++  hideOutsideMonthDays = true,
++  style = {},
+ }) => {
+   const theme = useTheme3();
+-  return /* @__PURE__ */ jsx3(
+-    Box2,
+-    {
++  return /* @__PURE__ */ jsx3(Box2, {
++    className: "drp-custom-day",
++    sx: {
++      display: "flex",
++      borderRadius: startOfRange
++        ? "50% 0 0 50%"
++        : endOfRange
++        ? "0 50% 50% 0"
++        : void 0,
++      backgroundColor: !disabled && highlighted ? '#ecebff' : void 0,
++      ...style.box,
++    },
++    children: /* @__PURE__ */ jsx3(IconButton2, {
++      className:
++        !disabled && filled
++          ? "drp-custom-day-selected"
++          : !disabled && outlined
++          ? "drp-custom-day-not-selected"
++          : "",
++      disableRipple: true,
++      color: "primary",
+       sx: {
+-        display: "flex",
+-        borderRadius: startOfRange ? "50% 0 0 50%" : endOfRange ? "0 50% 50% 0" : void 0,
+-        backgroundColor: !disabled && highlighted ? alpha2(theme.palette.primary.main, 0.1) : void 0
+-      },
+-      children: /* @__PURE__ */ jsx3(
+-        IconButton2,
+-        {
+-          disableRipple: true,
+-          color: "primary",
+-          sx: {
+-            ":hover": {
+-              backgroundColor: alpha2(theme.palette.primary.light, 0.2)
+-            },
+-            borderRadius: "8px",
+-            height: "36px",
+-            width: "36px",
+-            padding: 0,
+-            border: !disabled && outlined ? `1px solid ${theme.palette.primary.main}` : void 0,
+-            ...!disabled && filled ? {
++        ":hover": {
++          backgroundColor: alpha2(theme.palette.primary.light, 0.2),
++        },
++        borderRadius: "8px",
++        height: "36px",
++        width: "36px",
++        padding: 0,
++        // border:
++        //   !disabled && outlined
++        //     ? `1px solid ${theme.palette.primary.main}`
++        //     : void 0,
++        ...(!disabled && filled
++          ? {
+               "&:hover": {
+-                backgroundColor: theme.palette.primary.main
++                backgroundColor: theme.palette.primary.main,
+               },
+-              backgroundColor: theme.palette.primary.main
+-            } : {}
+-          },
+-          disabled,
+-          onClick,
+-          onMouseOver: onHover,
+-          children: /* @__PURE__ */ jsx3(
+-            Typography2,
+-            {
+-              sx: {
+-                fontSize: "14px",
+-                visibility: hidden && hideOutsideMonthDays ? "hidden" : "visible",
+-                color: !disabled ? filled ? theme.palette.primary.contrastText : theme.palette.text.primary : theme.palette.text.secondary
+-              },
+-              children: value
++              backgroundColor: theme.palette.primary.main,
+             }
+-          )
+-        }
+-      )
+-    }
+-  );
++          : {}),
++        ...style.iconButton,
++      },
++      disabled,
++      onClick,
++      onMouseOver: onHover,
++      children: /* @__PURE__ */ jsx3(Typography2, {
++        className: "drp-custom-day-typography",
++        sx: {
++          fontSize: "14px",
++          visibility: hidden && hideOutsideMonthDays ? "hidden" : "visible",
++          color: !disabled
++            ? filled
++              ? theme.palette.primary.contrastText
++              : theme.palette.text.primary
++            : theme.palette.text.secondary,
++          ...style.typography,
++        },
++        children: value,
++      }),
++    }),
++  });
+ };
+ 
+ // src/components/Month.tsx
+@@ -554,7 +570,7 @@ var Month = (props) => {
+     minDate,
+     maxDate,
+     locale,
+-    hideOutsideMonthDays
++    hideOutsideMonthDays,
+   } = props;
+   const weekStartsOn = locale?.options?.weekStartsOn || 0;
+   const WEEK_DAYS = Array.from(
+@@ -674,7 +690,7 @@ var DuelCalender = ({
+   canNavigateCloser,
+   commonProps,
+   locale,
+-  hideOutsideMonthDays
++  hideOutsideMonthDays,
+ }) => {
+   const canNavigateBack = !isSameMonth3(firstMonth, commonProps.minDate);
+   const canNavigateForward = !isSameMonth3(secondMonth, commonProps.maxDate);
+@@ -756,30 +772,33 @@ var ApplyButtonStyled = styled(Button)({
+   borderRadius: "8px",
+   textTransform: "none",
+   height: "36px",
+-  padding: "0 16px"
++  padding: "0 16px",
++  display: "none",
+ });
+ var Actions = ({ onCloseCallback, onSubmit }) => {
+   return /* @__PURE__ */ jsxs5(Fragment4, { children: [
+     /* @__PURE__ */ jsx6(Grid25, { children: /* @__PURE__ */ jsx6(
+       CancelButtonStyled,
+       {
++        className: "drp-cancel-btn",
+         disableRipple: true,
+         disableElevation: true,
+         variant: "text",
+         onClick: onCloseCallback,
+-        children: "Cancel"
++        children: "Close"
+       }
+     ) }),
+     /* @__PURE__ */ jsx6(Grid25, { children: /* @__PURE__ */ jsx6(
+       ApplyButtonStyled,
+       {
++        className: "drp-apply-btn",
+         disableRipple: true,
+         disableElevation: true,
+         type: "submit",
+         variant: "contained",
+         color: "primary",
+         onClick: onSubmit,
+-        children: "Apply Range"
++        children: "Apply"
+       }
+     ) })
+   ] });
+@@ -842,7 +861,7 @@ var Footer = ({
+                 xs: "center",
+                 md: "left"
+               },
+-              children: previewDate(startDate)
++              // children: previewDate(startDate)
+             }
+           ) : /* @__PURE__ */ jsx7(
+             PreviewDateMessageTypoStyled,
+@@ -851,7 +870,7 @@ var Footer = ({
+                 xs: "center",
+                 md: "left"
+               },
+-              children: "Start Date"
++              // children: "Start Date"
+             }
+           ),
+           /* @__PURE__ */ jsx7(
+@@ -861,7 +880,7 @@ var Footer = ({
+               sx: {
+                 fill: theme.palette.grey[400],
+                 display: {
+-                  xs: "block",
++                  xs: "none",
+                   md: "none"
+                 }
+               }
+@@ -875,7 +894,7 @@ var Footer = ({
+                 fill: theme.palette.grey[400],
+                 display: {
+                   xs: "none",
+-                  md: "block"
++                  md: "none"
+                 }
+               }
+             }
+@@ -887,7 +906,7 @@ var Footer = ({
+                 xs: "center",
+                 md: "left"
+               },
+-              children: previewDate(endDate)
++              // children: previewDate(endDate)
+             }
+           ) : /* @__PURE__ */ jsx7(
+             PreviewDateMessageTypoStyled,
+@@ -896,7 +915,7 @@ var Footer = ({
+                 xs: "center",
+                 md: "left"
+               },
+-              children: "End Date"
++              // children: "End Date"
+             }
+           )
+         ]
+@@ -906,7 +925,7 @@ var Footer = ({
+       Grid26,
+       {
+         display: {
+-          xs: "block",
++          xs: "none",
+           md: "none"
+         },
+         children: /* @__PURE__ */ jsx7(Divider2, { orientation: "horizontal" })
+@@ -1021,192 +1040,191 @@ var Sections = (props) => {
+       }
+     }
+   }, [selectedRangeObj, dateRange]);
+-  return /* @__PURE__ */ jsxs7(
+-    Grid28,
+-    {
+-      container: true,
+-      sx: {
+-        borderRadius: "16px",
+-        backgroundColor: "#fff",
+-        overflow: "hidden"
+-      },
+-      children: [
+-        /* @__PURE__ */ jsx9(
+-          Grid28,
+-          {
+-            xs: "auto",
++  return /* @__PURE__ */ jsxs7(Grid28, {
++    container: true,
++    sx: {
++      borderRadius: "16px",
++      backgroundColor: "#fff",
++      overflow: "hidden",
++    },
++    children: [
++      /* @__PURE__ */ jsx9(Grid28, {
++        xs: "auto",
++        container: true,
++        direction: "column",
++        className: "DRP-Defined-Ranges",
++        display: { xs: "none", md: hideDefaultRanges ? "none" : "flex" },
++        children: /* @__PURE__ */ jsx9(DefinedRanges, {
++          selectedRange: dateRange,
++          ranges,
++          setRange: handleClickDefinedRange,
++        }),
++      }),
++      /* @__PURE__ */ jsx9(Grid28, {
++        xs: "auto",
++        display: { xs: "none", md: hideDefaultRanges ? "none" : "block" },
++        children: /* @__PURE__ */ jsx9(Divider3, { orientation: "vertical" }),
++      }),
++      /* @__PURE__ */ jsxs7(Grid28, {
++        xs: true,
++        container: true,
++        direction: "column",
++        children: [
++          /* @__PURE__ */ jsx9(Grid28, {
++            display: { xs: "none", md: "none" },
+             container: true,
+-            direction: "column",
+-            className: "DRP-Defined-Ranges",
+-            display: { xs: "none", md: hideDefaultRanges ? "none" : "flex" },
+-            children: /* @__PURE__ */ jsx9(
+-              DefinedRanges,
+-              {
+-                selectedRange: dateRange,
+-                ranges,
+-                setRange: handleClickDefinedRange
+-              }
+-            )
+-          }
+-        ),
+-        /* @__PURE__ */ jsx9(
+-          Grid28,
+-          {
+-            xs: "auto",
+-            display: { xs: "none", md: hideDefaultRanges ? "none" : "block" },
+-            children: /* @__PURE__ */ jsx9(Divider3, { orientation: "vertical" })
+-          }
+-        ),
+-        /* @__PURE__ */ jsxs7(Grid28, { xs: true, container: true, direction: "column", children: [
+-          /* @__PURE__ */ jsx9(
+-            Grid28,
+-            {
+-              display: { xs: hideDefaultRanges ? "none" : "flex", md: "none" },
++            height: "48px",
++            alignItems: "center",
++            px: "16px",
++            sx: { backgroundColor: alpha4(theme.palette.grey[400], 0.1) },
++            children: /* @__PURE__ */ jsxs7(Grid28, {
++              xs: 12,
+               container: true,
+-              height: "48px",
++              justifyContent: "space-between",
+               alignItems: "center",
+-              px: "16px",
+-              sx: { backgroundColor: alpha4(theme.palette.grey[400], 0.1) },
+-              children: /* @__PURE__ */ jsxs7(
+-                Grid28,
+-                {
+-                  xs: 12,
+-                  container: true,
+-                  justifyContent: "space-between",
+-                  alignItems: "center",
+-                  children: [
+-                    /* @__PURE__ */ jsx9(
+-                      Typography5,
+-                      {
++              children: [
++                /* @__PURE__ */ jsx9(Typography5, {
++                  sx: {
++                    fontSize: "14px",
++                  },
++                  children: "Quick Select",
++                }),
++                /* @__PURE__ */ jsx9(FormControl2, {
++                  children: /* @__PURE__ */ jsx9(Select2, {
++                    displayEmpty: true,
++                    SelectDisplayProps: {
++                      style: {
++                        minHeight: "unset",
++                      },
++                    },
++                    variant: "outlined",
++                    size: "small",
++                    IconComponent: (props2) =>
++                      /* @__PURE__ */ jsx9(KeyboardArrowDown2, {
++                        fontSize: "small",
+                         sx: {
+-                          fontSize: "14px"
++                          fill: theme.palette.grey[400],
+                         },
+-                        children: "Quick Select"
+-                      }
+-                    ),
+-                    /* @__PURE__ */ jsx9(FormControl2, { children: /* @__PURE__ */ jsx9(
+-                      Select2,
+-                      {
+-                        displayEmpty: true,
+-                        SelectDisplayProps: {
+-                          style: {
+-                            minHeight: "unset"
+-                          }
++                        ...props2,
++                      }),
++                    slotProps: {
++                      root: {
++                        sx: {
++                          height: "30px",
++                          backgroundColor: "#fff",
+                         },
+-                        variant: "outlined",
+-                        size: "small",
+-                        IconComponent: (props2) => /* @__PURE__ */ jsx9(
+-                          KeyboardArrowDown2,
+-                          {
+-                            fontSize: "small",
+-                            sx: {
+-                              fill: theme.palette.grey[400]
+-                            },
+-                            ...props2
+-                          }
+-                        ),
+-                        slotProps: {
+-                          root: {
+-                            sx: {
+-                              height: "30px",
+-                              backgroundColor: "#fff"
+-                            }
+-                          }
++                      },
++                    },
++                    MenuProps: {
++                      disablePortal: true,
++                      PaperProps: {
++                        sx: {
++                          width: "auto",
++                          maxHeight: "224px",
++                          boxShadow:
++                            "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
+                         },
+-                        MenuProps: {
+-                          disablePortal: true,
+-                          PaperProps: {
++                      },
++                    },
++                    value: selectedRange,
++                    onChange: onChangeSelectedRange,
++                    children: ranges.map((range) => {
++                      return /* @__PURE__ */ jsx9(
++                        MenuItem2,
++                        {
++                          value: range.label,
++                          children: /* @__PURE__ */ jsx9(Typography5, {
+                             sx: {
+-                              width: "auto",
+-                              maxHeight: "224px",
+-                              boxShadow: "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px"
+-                            }
+-                          }
++                              fontSize: "14px",
++                            },
++                            children: range.label,
++                          }),
+                         },
+-                        value: selectedRange,
+-                        onChange: onChangeSelectedRange,
+-                        children: ranges.map((range) => {
+-                          return /* @__PURE__ */ jsx9(MenuItem2, { value: range.label, children: /* @__PURE__ */ jsx9(
+-                            Typography5,
+-                            {
+-                              sx: {
+-                                fontSize: "14px"
+-                              },
+-                              children: range.label
+-                            }
+-                          ) }, range.label);
+-                        })
+-                      }
+-                    ) })
+-                  ]
+-                }
+-              )
+-            }
+-          ),
+-          /* @__PURE__ */ jsx9(Grid28, { display: { xs: "block", md: "none" }, children: /* @__PURE__ */ jsx9(Divider3, {}) }),
+-          /* @__PURE__ */ jsx9(Grid28, { container: true, display: { xs: "flex", md: "none" }, children: /* @__PURE__ */ jsx9(
+-            SingleCalender,
+-            {
++                        range.label
++                      );
++                    }),
++                  }),
++                }),
++              ],
++            }),
++          }),
++          /* @__PURE__ */ jsx9(Grid28, {
++            display: { xs: "block", md: "none" },
++            children: /* @__PURE__ */ jsx9(Divider3, {}),
++          }),
++          /* @__PURE__ */ jsx9(Grid28, {
++            container: true,
++            display: { xs: "flex", md: "none" },
++            children: /* @__PURE__ */ jsx9(SingleCalender, {
+               firstMonth,
+               secondMonth,
+               handleSetSingleMonth,
+               canNavigateCloser,
+               commonProps,
+-              hideOutsideMonthDays
+-            }
+-          ) }),
+-          /* @__PURE__ */ jsx9(Grid28, { flex: 1, display: { xs: "none", md: "flex" }, container: true, children: /* @__PURE__ */ jsx9(
+-            DuelCalender,
+-            {
++              hideOutsideMonthDays,
++            }),
++          }),
++          /* @__PURE__ */ jsx9(Grid28, {
++            flex: 1,
++            display: { xs: "none", md: "flex" },
++            container: true,
++            children: /* @__PURE__ */ jsx9(DuelCalender, {
+               firstMonth,
+               secondMonth,
+               handleSetFirstMonth,
+               handleSetSecondMonth,
+               canNavigateCloser,
+               commonProps,
+-              hideOutsideMonthDays
+-            }
+-          ) }),
+-          footerRequired ? /* @__PURE__ */ jsxs7(Fragment6, { children: [
+-            /* @__PURE__ */ jsx9(Grid28, { display: hideActionButtons ? "none" : "block", children: /* @__PURE__ */ jsx9(Divider3, {}) }),
+-            /* @__PURE__ */ jsx9(
+-              Grid28,
+-              {
+-                display: hideActionButtons ? "none" : "flex",
+-                xs: "auto",
+-                container: true,
+-                alignItems: {
+-                  xs: "normal",
+-                  md: "center"
+-                },
+-                justifyContent: {
+-                  xs: "center",
+-                  md: "flex-end"
+-                },
+-                direction: {
+-                  xs: "column",
+-                  md: "row"
+-                },
+-                p: "16px",
+-                gap: "16px",
+-                children: /* @__PURE__ */ jsx9(
+-                  Footer,
+-                  {
+-                    startDate,
+-                    endDate,
+-                    locale,
+-                    onCloseCallback,
+-                    onSubmit: handlers.handleClickSubmit,
+-                    RangeSeparatorIcons
+-                  }
+-                )
+-              }
+-            )
+-          ] }) : null
+-        ] })
+-      ]
+-    }
+-  );
++              hideOutsideMonthDays,
++            }),
++          }),
++          footerRequired
++            ? /* @__PURE__ */ jsxs7(Fragment6, {
++                children: [
++                  /* @__PURE__ */ jsx9(Grid28, {
++                    display: hideActionButtons ? "none" : "block",
++                    children: /* @__PURE__ */ jsx9(Divider3, {}),
++                  }),
++                  /* @__PURE__ */ jsx9(Grid28, {
++                    display: hideActionButtons ? "none" : "flex",
++                    xs: "auto",
++                    container: true,
++                    alignItems: {
++                      xs: "normal",
++                      md: "center",
++                    },
++                    justifyContent: {
++                      xs: "center",
++                      md: "flex-end",
++                    },
++                    direction: {
++                      xs: "column",
++                      md: "row",
++                    },
++                    p: {
++                      xs: "8px 8px 16px 8px",
++                      md: "16px",
++                    },
++                    gap: {
++                      xs: "0",
++                      md: "16px",
++                    },
++                    children: /* @__PURE__ */ jsx9(Footer, {
++                      startDate,
++                      endDate,
++                      locale,
++                      onCloseCallback,
++                      onSubmit: handlers.handleClickSubmit,
++                      RangeSeparatorIcons,
++                    }),
++                  }),
++                ],
++              })
++            : null,
++        ],
++      }),
++    ],
++  });
+ };
+ 
+ // src/hooks/useDateRangePicker.ts

@@ -1,0 +1,97 @@
+{
+  "name": "saforus-bo",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/saforus-bo/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/saforus-bo"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        },
+        "staging": {
+          "mode": "staging"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "saforus-bo:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "saforus-bo:build:development",
+          "hmr": true,
+          "proxyConfig": "apps/saforus-bo/proxy.conf.json"
+        },
+        "production": {
+          "buildTarget": "saforus-bo:build:production",
+          "hmr": false
+        },
+        "staging": {
+          "buildTarget": "saforus-bo:build:staging",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "saforus-bo:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "saforus-bo:build:development"
+        },
+        "production": {
+          "buildTarget": "saforus-bo:build:production"
+        },
+        "staging": {
+          "buildTarget": "saforus-bo:build:staging"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": [
+        "coverage/apps/saforus-bo"
+      ],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/apps/saforus-bo"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/saforus-bo/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "saforus-bo:build"
+      }
+    }
+  },
+  "tags": []
+}

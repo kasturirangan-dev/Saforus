@@ -1,0 +1,219 @@
+{
+  "button": {
+    "cancel": "취소",
+    "confirm": "확인",
+    "save": "저장",
+    "search": "검색",
+    "close": "닫기",
+    "back-to-start": "처음으로  돌아가기",
+    "continue": "요청 보내기",
+    "log-in": "로그인 하기",
+    "back-previous-step": "이전 페이지로 돌아가기",
+    "register": "가입하기",
+    "sign-up": "가입하기",
+    "support": "고객 지원",
+    "delete": "삭제",
+    "archive": "보관",
+    "activate": "내 계정 활성화 하기"
+  },
+  "menu": {
+    "contacts": "콘택트 렌즈",
+    "home": "집",
+    "resources": "자원",
+    "products": "우리의 제품",
+    "documentation": "선적 서류 비치",
+    "search": "Search",
+    "help": "Help",
+    "contact": "Contact"
+  },
+  "tool-tip": {
+    "pass-required-title": "안전한 비밀번호를  생성해 주세요.",
+    "pass-des": "최소 8글자 이상 최대 12글자까지 입력할 수 있어요. 최소 1개의 숫자와, 1개의 특수 문자를 포함해 주세요."
+  },
+  "page-not-found": {
+    "404-not-found": "404 오류가 발생했어요",
+    "page-not-exist": "요청하신 페이지를 가져올 수 없어요.",
+    "page-not-exist-description": "회원님께서 요청하신 페이지를 찾지 못햇어요."
+  },
+  "page-login": {
+    "welcome": "회원 로그인",
+    "keep-login": "로그인 상태 유지",
+    "forgot-pass": "비밀번호를 잊었나요?",
+    "don-have-account": "아직 세이포러스 회원이 아니신가요? "
+  },
+  "common": {
+    "email-address": "이메일",
+    "password": "비밀번호",
+    "placeholder-email": "이메일을 입력해주세요",
+    "placeholder-pass": "비밀번호를 입력해주세요",
+    "placeholder-email2": "이메일 주소를 입력해 주세요",
+    "loading": "로드중...",
+    "notification": "공고",
+    "copy-success": "클립보드에 복사되었습니다!"
+  },
+  "page-register": {
+    "your-name": "이름",
+    "placeholder-companyname": "회사 이름을 입력해 주세요",
+    "placeholder-confirm-pass": "비밀번호를 다시 입력해주세요",
+    "confirm-pass": "비밀번호 확인",
+    "company-name": "회사 이름",
+    "placeholder-yourname": "이름을 입력해 주세요",
+    "country-of-incorporation": "사업 운영 국가",
+    "has-account": "이미 세이포러스 계정이 있으신가요?",
+    "agree-condition": "[필수] 세이포러스 서비스 이용약관에 동의",
+    "agree-policy": "[필수] 개인정보처리 방침에 동의",
+    "join-us": "회원가입",
+    "placeholder-pass2": "비밀번호를 입력해 주세요",
+    "placeholder-email3": "이메일 주소를 입력해 주세요"
+  },
+  "page-reset": {
+    "reset-password": "비밀번호 초기화",
+    "reset-pass-description": "회원가입에 사용한 이메일을 입력해 주세요",
+    "resent-email": "비밀번호 재설정 메일 다시 보내기",
+    "dialog": {
+      "title-reset-email": "‘%{email}’ 로비밀번호 재설정 메일을 발송했어요",
+      "content-description-1": "메일함을 확인하고 이메일에 포함된 비밀번호 재설정 버튼을 눌러 주세요.",
+      "content-description-2": "메일이 오지 않았다면 스팸함을 확인해 주세요.",
+      "contact-support": "고객센터 문의하기",
+      "blocked-sending-email": "비밀번호 재설정 이메일은하루에 최대 5번까지 발송할 수 있어요.",
+      "back-to-reset": "비밀번호 재설정 요청하기",
+      "title-reset-email-failed": "‘%{email}’ 로비밀번호 재설정 요청을 처리할 수 없어요",
+      "content-failed-description-1": "SaForus 회원가입에 사용한 이름과 이메일 주소를 입력하였는지 확인해 주세요.",
+      "content-failed-description-2": "만약 등록한 이메일과 이름이 기억나지 않는다면, 아래 고객센터 문의하기 버튼을 눌러서 질문을 남겨주세요."
+    },
+    "email-resent-successfully": "이메일 재전송 성공!"
+  },
+  "error-message": {
+    "email-invalid": "잘못된 이메일",
+    "password-required": "비밀번호가 필요합니다",
+    "password-required-length": "암호는 8-12자 길이여야 합니다.",
+    "password-requires-number": "비밀번호는 숫자가 필요합니다",
+    "password-requires-lowercase": "암호에는 소문자가 필요합니다.",
+    "password-required-symbol": "암호에는 기호가 필요합니다.",
+    "password-must-match": "비밀번호 확인이 일치하지 않습니다",
+    "company-name-required": "회사 이름이 필요합니다",
+    "country-incorporation-required": "법인 국가를 입력해야 합니다.",
+    "name-required": "이름이 필요합니다",
+    "email-required": "이메일이 필요합니다"
+  },
+  "page-settings": {
+    "dashboard": "대시 보드",
+    "service-usage": "패키징 및 전달 내역",
+    "search-order": "라이선스 발급 현황",
+    "multi-drm-packaging": "멀티 DRM 패키징",
+    "packaging-history": "패키징 작업현황 보기",
+    "distribution-service": "포렌식 워터마킹",
+    "new-forensic-watermarking": "Forensic Watermarking",
+    "view-orders": "검출 결과 보기",
+    "new-request": "신규 검출 요청",
+    "detection-report": "검출 결과 보기",
+    "settings": "서비스 설정",
+    "my-sites-storages": "나의 사이트 및 스토리지",
+    "multi-drm": "Multi-DRM 정보 설정",
+    "my-account": "계정 관리",
+    "streaming-service": "스트리밍 서비스",
+    "watermark-view-orders": "워터마킹 신청내역 보기"
+  },
+  "settings-pages": {
+    "error-message": {
+      "site-name-required": "사이트 이름이 필요합니다",
+      "url-invalid": "URL이 잘못되었습니다.",
+      "url-required": "URL이 필요합니다"
+    },
+    "sites": {
+      "title": "나의 사이트 및 스토리지",
+      "add-site": "사이트 추가하기",
+      "empty-list": "등록된 사이트가 없습니다.\n<bold>“사이트 추가하기”</bold> 버튼을 클릭하고 사이트를 등록하세요."
+    },
+    "create-site": {
+      "title": "사이트 추가하기",
+      "subtitle": "세이포러스 서비스를 이용하실 사이트 정보를 등록해 주세요",
+      "site-name": "사이트 이름",
+      "site-url": "사이트 URL"
+    },
+    "site-detail": {
+      "url-label": "Site URL",
+      "site-id-label": "Site ID",
+      "site-key-label": "Site Key",
+      "access-key-label": "Access Key"
+    },
+    "storage": {
+      "title": "스토리지 목록",
+      "add-storage": "스토리지 추가하기",
+      "add-storage-description": "콘텐츠를 저장할 수 있는 저장소를 안전하게 등록하려면 여기를 클릭하세요.",
+      "empty-list": "등록된 스토리지가 없습니다.\n<bold>“스토리지 추가하기”</bold> 버튼을 클릭하고 스토리지를 등록하세요",
+      "edit": "수정",
+      "save": "저장",
+      "cancel": "취소",
+      "cancel-add-new": "스토리지 추가를 취소했어요."
+    },
+    "delete-site": {
+      "title": "'%{name}' 사이트 정보를 정말 삭제 하시겠어요?",
+      "content": "사이트를 삭제하면 해당 사이트에서 작업한 서비스 요청기록이 조회되지 않아요. 그리고 사이트에 포함된 스토리지 정보도 모두 삭제되요.",
+      "agree-term": "위 내용을 모두 읽고 확인 했어요."
+    },
+    "delete-storage": {
+      "title": "'%{name}'  스토리지 정보를 정말 삭제하시겠어요?",
+      "content": "스토리지를 삭제하면, 이 스토리지를 이용하여 작업한 내역이 조회 되지 않아요. ‘삭제’  대신 ‘보관’ 기능을 사용해 보세요.",
+      "agree-term": "위 내용을 모두 읽고 확인 했어요."
+    }
+  },
+  "api": {
+    "400": "잘못된 구문으로 인해 서버에서 요청을 이해할 수 없습니다.",
+    "404": "요청한 페이지를 사용할 수 없거나 경우에 따라 존재하지 않습니다.",
+    "500": "500 내부 서버 오류",
+    "unknown-error": "알 수 없는 오류가 발생했습니다.",
+    "login": {
+      "400": "정보가 올바르지 않습니다. 다시 확인해 주세요.",
+      "401": "잘못된 사용자 이름/암호입니다.",
+      "403": "계정이 잠겼습니다."
+    },
+    "signup": {
+      "400": "정보가 올바르지 않습니다. 다시 확인해 주세요.",
+      "403": "이메일 계정이 이미 존재합니다."
+    },
+    "reset-password": {
+      "400": "정보가 올바르지 않습니다. 다시 확인해 주세요.",
+      "404": "이메일/회사 이름이 잘못되었습니다."
+    },
+    "new-password": {
+      "400": "정보가 올바르지 않습니다. 다시 확인해 주세요.",
+      "404": "요청에 포함된 보안 토큰이 만료되었습니다."
+    },
+    "activation": {
+      "400": "정보가 올바르지 않습니다. 다시 확인해 주세요.",
+      "404": "요청에 포함된 보안 토큰이 만료되었습니다."
+    }
+  },
+  "page-new-password": {
+    "reset-account-pass": "비밀번호 재설정 하기!",
+    "reset-password-email": "%{email} 계정을 위한 새로운 비밀번호를 설정하세요",
+    "new-password": "비밀번호 재설정",
+    "confirm-pass": "비밀번호 확인",
+    "placeholder-confirm-pass": "비밀번호를 다시 입력해주세요",
+    "reset-password": "비밀번호 재설정"
+  },
+  "page-reset-done": {
+    "title": "비밀번호 재설정 완료",
+    "description": "입력한 암호로 비밀번호를 다시 설정했어요. 새로운 비밀번호로 로그인하세요!"
+  },
+  "page-watermarking": {
+    "create": {
+      "title": "배포용 포렌식 워터마킹"
+    }
+  },
+  "page-verify-email": {
+    "title": "회원가입 확인",
+    "content-description-1": "‘%{email}’ 으로 SaForus 서비스에  가입했어요.",
+    "content-description-2": "아래 버튼을 눌러서 계정을 활성화 해 주세요"
+  },
+  "page-register-done": {
+    "content-description-1": "‘%{email}’으로이메일을 보냈습니다.",
+    "content-description-2": "계정을 활성화하려면 이메일을 확인하고등록을 완료해주세요.",
+    "title": "등록해 주셔서 감사합니다."
+  },
+  "page-register-completed": {
+    "title": "등록 완료",
+    "description": "등록 절차가 완료되었습니다. 지금 로그인할 수 있습니다."
+  }
+}

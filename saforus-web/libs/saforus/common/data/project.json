@@ -1,0 +1,16 @@
+{
+  "name": "saforus-common-data",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus/common/data/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/saforus/common/data/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "shared-helpers-format",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/helpers/format/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/helpers/format/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

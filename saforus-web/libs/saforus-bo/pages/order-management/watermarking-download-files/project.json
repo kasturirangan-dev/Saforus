@@ -1,0 +1,20 @@
+{
+  "name": "saforus-bo-pages-order-management-watermarking-download-files",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus-bo/pages/order-management/watermarking-download-files/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus-bo/pages/order-management/watermarking-download-files/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

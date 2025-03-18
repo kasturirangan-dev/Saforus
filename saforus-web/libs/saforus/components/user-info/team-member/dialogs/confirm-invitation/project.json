@@ -1,0 +1,18 @@
+{
+  "name": "saforus-components-user-info-team-member-dialogs-confirm-invitation",
+  "$schema": "../../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus/components/user-info/team-member/dialogs/confirm-invitation/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus/components/user-info/team-member/dialogs/confirm-invitation/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

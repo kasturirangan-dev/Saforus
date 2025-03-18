@@ -1,0 +1,16 @@
+{
+  "name": "shared-helpers-layout-store",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/helpers/layout/store/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/helpers/layout/store/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

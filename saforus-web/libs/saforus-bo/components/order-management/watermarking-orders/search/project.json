@@ -1,0 +1,18 @@
+{
+  "name": "saforus-bo-components-order-management-watermarking-orders-search",
+  "$schema": "../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus-bo/components/order-management/watermarking-orders/search/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus-bo/components/order-management/watermarking-orders/search/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

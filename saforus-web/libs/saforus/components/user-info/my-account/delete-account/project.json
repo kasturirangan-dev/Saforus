@@ -1,0 +1,18 @@
+{
+  "name": "saforus-components-user-info-my-account-delete-account",
+  "$schema": "../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus/components/user-info/my-account/delete-account/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus/components/user-info/my-account/delete-account/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

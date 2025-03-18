@@ -1,0 +1,18 @@
+{
+  "name": "api-docs-components-guides-data",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-docs/components/guides/data/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-docs/components/guides/data/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

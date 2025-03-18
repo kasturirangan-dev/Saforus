@@ -1,0 +1,18 @@
+{
+  "name": "saforus-components-forensic-watermarking-dialogs-warning-files-length",
+  "$schema": "../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus/components/forensic-watermarking/dialogs/warning-files-length/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus/components/forensic-watermarking/dialogs/warning-files-length/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

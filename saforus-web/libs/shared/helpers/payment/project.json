@@ -1,0 +1,16 @@
+{
+  "name": "shared-helpers-payment",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/helpers/payment/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/helpers/payment/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

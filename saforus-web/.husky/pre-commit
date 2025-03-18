@@ -1,0 +1,36 @@
+#!/usr/bin/env sh
+
+# Determine OS Environment
+UNAME=$(uname | tr "[:upper:]" "[:lower:]")
+if [ "$UNAME" = "linux" ] || [ "$UNAME" = "darwin" ]; then
+    # Unix-like environment (Linux or macOS)
+
+    . "$(dirname -- "$0")/_/husky.sh"
+
+    export NVM_DIR="$HOME/.nvm"
+    . "$NVM_DIR/nvm.sh"
+
+    a=$(nvm ls | grep 'node')
+    b=${a#*(-> }
+    v=${b%%[)| ]*}
+
+    export PATH="$NVM_DIR/versions/node/$v/bin:$PATH"
+
+elif [ "$UNAME" = "mingw" ] || [ "$UNAME" = "cygwin" ] || [ "$UNAME" = "msys" ]; then
+    # Windows environment (Git Bash)
+
+    . "$(dirname -- "$0")/_/husky.sh"
+
+    export NVM_DIR="$HOME/.nvm"
+    . "$NVM_DIR/nvm.sh"
+
+    a=$(nvm ls | grep 'node')
+    b=${a#*(-> }
+    v=${b%%[)| ]*}
+
+    export PATH="$NVM_DIR/versions/node/$v/bin:$PATH"
+fi
+
+# Trigger esLint on pre-commit (comment out this line to bypass rule)
+npx lint-staged --relative
+# nx affected:lint => Should prefer use this command

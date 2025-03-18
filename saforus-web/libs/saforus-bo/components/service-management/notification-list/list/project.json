@@ -1,0 +1,18 @@
+{
+  "name": "saforus-bo-components-service-management-notification-list-list",
+  "$schema": "../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus-bo/components/service-management/notification-list/list/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus-bo/components/service-management/notification-list/list/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

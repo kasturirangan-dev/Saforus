@@ -1,0 +1,16 @@
+{
+  "name": "saforus-bo-common-view",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus-bo/common/view/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/saforus-bo/common/view/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

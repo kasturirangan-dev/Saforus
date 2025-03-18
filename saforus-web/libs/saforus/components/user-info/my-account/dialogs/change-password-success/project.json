@@ -1,0 +1,18 @@
+{
+  "name": "saforus-components-user-info-my-account-dialogs-change-password-success",
+  "$schema": "../../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus/components/user-info/my-account/dialogs/change-password-success/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus/components/user-info/my-account/dialogs/change-password-success/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

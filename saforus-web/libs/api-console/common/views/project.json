@@ -1,0 +1,18 @@
+{
+  "name": "api-console-common-views",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-console/common/views/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-console/common/views/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

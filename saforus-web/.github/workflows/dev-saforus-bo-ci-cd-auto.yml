@@ -1,0 +1,23 @@
+name: 'Dev: Saforus BO - CI/CD - Auto'
+
+on:
+  push:
+    tags:
+      - 'dev-[0-9]*.[0-9]*.[0-9]*' # Matches tags like dev-0.36.0
+      - 'dev-bo-[0-9]*.[0-9]*.[0-9]*' # Matches tags like dev-bo-0.36.0
+
+jobs:
+  call-ci-cd-workflow:
+    uses: ./.github/workflows/ci-cd-template.yml
+    with:
+      AWS_ACCOUNT_ID: '062029356220'
+      ECS_CLUSTER: dev-cs-cluster
+      DEPLOYMENT_ENV: development
+      TARGET_APP: saforus-bo
+      CPU_SIZE: 256
+      MEMORY_SIZE: 512
+      SVC_PORT: 80
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

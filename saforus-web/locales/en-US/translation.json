@@ -1,0 +1,219 @@
+{
+  "button": {
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "search": "Search",
+    "close": "Close",
+    "back-to-start": "Back to start",
+    "continue": "Continue",
+    "log-in": "Log In",
+    "back-previous-step": "Go back to the previous step",
+    "register": "Register",
+    "sign-up": "Sign Up",
+    "support": "Support",
+    "delete": "Delete",
+    "archive": "Archive",
+    "activate": "Activate My Account"
+  },
+  "menu": {
+    "home": "Home",
+    "resources": "Resources",
+    "contacts": "Contacts",
+    "products": "Our Products",
+    "documentation": "Documentation",
+    "search": "Search",
+    "help": "Help",
+    "contact": "Contact"
+  },
+  "tool-tip": {
+    "pass-required-title": "Requirement",
+    "pass-des": "Minimum 8 characters and maximum 12 characters in numbers, lower case letters, and special symbols"
+  },
+  "page-not-found": {
+    "404-not-found": "404 Not Found",
+    "page-not-exist": "Whoops! That page doesn’t exist.",
+    "page-not-exist-description": "The page you requested could not be found"
+  },
+  "page-login": {
+    "welcome": "Welcome Back!",
+    "keep-login": "Keep me logged in",
+    "forgot-pass": "Forgot Password?",
+    "don-have-account": "Don’t have an account?"
+  },
+  "common": {
+    "email-address": "Email Address",
+    "password": "Password",
+    "placeholder-email": "Insert your email",
+    "placeholder-pass": "Insert your password",
+    "placeholder-email2": "Email",
+    "loading": "Loading...",
+    "notification": "Notification",
+    "copy-success": "Copied to clipboard"
+  },
+  "page-register": {
+    "your-name": "Your Name",
+    "placeholder-companyname": "Please enter your company name",
+    "placeholder-confirm-pass": "Please re-enter your password",
+    "confirm-pass": "Confirm Password",
+    "company-name": "Company Name",
+    "placeholder-yourname": "Enter your name",
+    "country-of-incorporation": "Country of Incorporation",
+    "has-account": "Already have an account?",
+    "agree-condition": "Agree to Terms of Service",
+    "agree-policy": "Agree to Privacy Policy",
+    "join-us": "Join Us!",
+    "placeholder-pass2": "Enter 8 characters in numbers, special symbols",
+    "placeholder-email3": "Enter your email to create a new account"
+  },
+  "page-reset": {
+    "reset-password": "Reset password",
+    "reset-pass-description": "Enter your information to reset your password",
+    "resent-email": "Resend the password reset email",
+    "dialog": {
+      "title-reset-email": "Password reset email has been sent to ‘%{email}’",
+      "content-description-1": "Please check your inbox and click on the  button in the email.",
+      "content-description-2": "If you do not see the email in a few minutes, check your Junk mail folder or Spam folder.",
+      "contact-support": "Contact Us for Support",
+      "blocked-sending-email": "Password reset email can be sent up to 5 times in a day.",
+      "back-to-reset": "Go Back to Reset Password",
+      "title-reset-email-failed": "Your password reset request to ‘%{email}’ could not be processed",
+      "content-failed-description-1": "Email or name entered appears to be invalid. Please check them carefully.",
+      "content-failed-description-2": "If both are correct, please contact us for Customer Support."
+    },
+    "email-resent-successfully": "Email resend successfully!"
+  },
+  "error-message": {
+    "email-invalid": "Invalid email",
+    "password-required": "Password is required",
+    "password-required-length": "Password must be 8-12 characters long",
+    "password-requires-number": "Password requires a number",
+    "password-requires-lowercase": "Password requires a lowercase character",
+    "password-required-symbol": "Password requires a symbol",
+    "password-must-match": "The Confirm Password does not match",
+    "company-name-required": "Company Name is required",
+    "country-incorporation-required": "Country of incorporation is required",
+    "name-required": "Name is required",
+    "email-required": "Email is required"
+  },
+  "page-settings": {
+    "dashboard": "Dashboard",
+    "service-usage": "Packaging & Delivery",
+    "search-orders": "Search Orders",
+    "multi-drm-packaging": "Multi-DRM Packaging",
+    "packaging-history": "Packaging History",
+    "distribution-service": "Forensic Watermarking",
+    "new-forensic-watermarking": "Create Order for Distribution",
+    "piracy-detection": "Piracy Detection",
+    "new-request": "New Request",
+    "view-orders": "View Orders",
+    "settings": "Settings",
+    "my-sites-storages": "My Sites & Storages",
+    "multi-drm": "Multi-DRM Settings",
+    "my-account": "My Account",
+    "streaming-service": "Streaming Service",
+    "watermark-view-orders": "View Orders"
+  },
+  "settings-pages": {
+    "error-message": {
+      "site-name-required": "Site Name is required",
+      "url-invalid": "Url is invalid",
+      "url-required": "Url is required"
+    },
+    "sites": {
+      "title": "My Site List",
+      "add-site": "Add New Site",
+      "empty-list": "There are no registered sites \nClick <bold>\"Add New Site\"</bold> and register the site."
+    },
+    "create-site": {
+      "title": "Add My Site",
+      "subtitle": "Please register your site to use SaForus service.",
+      "site-name": "Site Name",
+      "site-url": "Site URL"
+    },
+    "site-detail": {
+      "url-label": "Site URL",
+      "site-id-label": "Site ID",
+      "site-key-label": "Site Key",
+      "access-key-label": "Access Key"
+    },
+    "storage": {
+      "title": "My Storage List",
+      "add-storage": "Add New Storage",
+      "add-storage-description": "Click here to safely register the storage where the contents can be stored.",
+      "empty-list": "There are no registered storages \nClick <bold>\"Add New Storage\"</bold> and register the storage.",
+      "edit": "Edit",
+      "save": "Save",
+      "cancel": "Cancel",
+      "cancel-add-new": "Adding a new storage information has been canceled."
+    },
+    "delete-site": {
+      "title": "Do you really want to delete your '%{name}' site information?",
+      "content": "You can not search your previous tasks in the site once deleting this. You can use ‘Archive’ instead of ‘Delete’.",
+      "agree-term": "I have read and understood the notice above"
+    },
+    "delete-storage": {
+      "title": "Do you really want to delete your '%{name}' storage information ?",
+      "content": "You can not search your previous tasks with the storage once deleting this. You can use ‘Archive’ instead of ‘Delete’.",
+      "agree-term": "I have read and understood the notice above"
+    }
+  },
+  "api": {
+    "400": "The request could not be understood by the server due to malformed syntax.",
+    "404": "The requested page is unavailable or, in some cases, doesn't exist. ",
+    "500": " 500 internal server error",
+    "unknown-error": "An unknown error has occurred",
+    "login": {
+      "400": "Your information is incorrect. Please check again.",
+      "401": "Invalid username / password",
+      "403": "Your account has been locked"
+    },
+    "signup": {
+      "400": "Your information is incorrect. Please check again.",
+      "403": "The email account already exists"
+    },
+    "reset-password": {
+      "400": "Your information is incorrect. Please check again.",
+      "404": "Email / company name is invalid."
+    },
+    "new-password": {
+      "400": "Your information is incorrect. Please check again.",
+      "404": "The security token included in the request is invalid."
+    },
+    "activation": {
+      "400": "Your information is incorrect. Please check again.",
+      "404": "The security token included in the request is invalid."
+    }
+  },
+  "page-new-password": {
+    "reset-account-pass": "Reset account password!",
+    "reset-password-email": "Enter a new password for %{email}",
+    "new-password": "New Password",
+    "confirm-pass": "Confirm Password",
+    "placeholder-confirm-pass": "Please re-enter your password",
+    "reset-password": "Reset Password"
+  },
+  "page-reset-done": {
+    "title": "Password changed!",
+    "description": "Your password has been changed successfully."
+  },
+  "page-watermarking": {
+    "create": {
+      "title": "Forensic Watermarking for Distribution"
+    }
+  },
+  "page-verify-email": {
+    "title": "Confirm your registration",
+    "content-description-1": "You signed up with ‘%{email}’.",
+    "content-description-2": "Please click the button below to activate your account."
+  },
+  "page-register-done": {
+    "content-description-1": "We have sent you an email to ‘%{email}’.",
+    "content-description-2": "Please check your email and confirm your registration to activate your account.",
+    "title": "Thank you for your registration"
+  },
+  "page-register-completed": {
+    "title": "Registration completed!",
+    "description": "Your registration process is completed. You can login now."
+  }
+}

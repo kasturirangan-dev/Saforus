@@ -1,0 +1,67 @@
+name: 'CI/CD - Template'
+
+on:
+  workflow_call:
+    inputs:
+      AWS_ACCOUNT_ID:
+        required: true
+        type: string
+      DEPLOYMENT_ENV:
+        required: true
+        type: string
+      TARGET_APP:
+        required: true
+        type: string
+      S3_BUCKET_DIR:
+        required: true
+        type: string
+      CLOUDFRONT_DISTRIBUTION_ID:
+        required: true
+        type: string
+    secrets:
+      AWS_ACCESS_KEY_ID:
+        required: true
+      AWS_SECRET_ACCESS_KEY:
+        required: true
+      SLACK_WEBHOOK_URL:
+        required: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.DEPLOYMENT_ENV }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-northeast-2
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Build Web App & Push to Amazon S3 & CloudFront Invalidation
+        id: deploy-web-app
+        run: |
+          docker build --file Dockerfile-s3 --build-arg AWS_ACCOUNT_ID=${{ inputs.AWS_ACCOUNT_ID }} --build-arg WEB_ENV=${{ inputs.DEPLOYMENT_ENV }} --build-arg APP_NAME=${{ inputs.TARGET_APP }} -t static-web-app .
+          container_id=$(docker create static-web-app)
+          mkdir -p build/libs-graph/static
+          docker cp $container_id:/app/dist/apps/${{ inputs.TARGET_APP }}/. ./build
+          docker cp $container_id:/app/graph-output.html ./build/libs-graph/index.html
+          docker cp $container_id:/app/static ./build/libs-graph/static
+          aws s3 sync ./build s3://${{ inputs.S3_BUCKET_DIR }} --delete
+          aws cloudfront create-invalidation --distribution-id ${{ inputs.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/index.html"
+
+      - name: Send Notification to Slack
+        uses: 8398a7/action-slack@v3.16.2
+        with:
+          status: ${{ job.status }}
+          fields: repo,pullRequest,message,commit,author,action,eventName,ref,workflow,job,took
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        if: always()

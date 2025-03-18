@@ -1,0 +1,13 @@
+.link,
+.link:visited {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--purple-500);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

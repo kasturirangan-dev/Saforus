@@ -1,0 +1,18 @@
+{
+  "name": "api-console-pages-myplan",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-console/pages/myplan/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-console/pages/myplan/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+const apiWatermarking = {
+  create: {
+    title: 'Insert Watermark',
+    description: 'Embed an invisible watermark into the content.',
+    'upload-file': 'Upload File',
+    'drop-file-text': 'Upload your file for watermarking',
+    'browse-file-text': 'Drag or <0>Browse</0> a file from your computer.',
+    'insert-watermark': 'Insert Watermark',
+    watermark: {
+      description: 'Watermark Description',
+      placeholder: 'Enter watermark description here',
+      limit: 'You can have up to 10 watermarks in the same order.',
+      'description-tooltip': 'Description for your Watermark',
+    },
+    'submit-order': 'Submit Order',
+    loading: 'Submitting your order...',
+    success: 'Submitted',
+    failed: 'Something went wrong.',
+    errorCode: 'Error Code: %{code}',
+    'try-again': 'Please try again!',
+  },
+  'order-detail': {
+    title: 'Watermarking order',
+    description: 'Embed an invisible watermark into the content.',
+    'order-file-title': 'Watermarking order details',
+    'order-file-description': 'Embed an invisible watermark into the content.',
+    'order-number': 'Order Number',
+    'requested-date': 'Requested Date',
+    'original-file': 'Original File',
+    status: 'Status',
+    'watermarked-files': 'Watermarked Files',
+    completed: 'Completed',
+    failed: 'Failed',
+    'file-number': 'Requested File Number',
+    'process-date': 'Processed Date',
+    watermark: {
+      description: 'Watermark Description',
+      'created-date': 'Created Date',
+      status: 'Status',
+      'description-tooltip': 'Description for your Watermark',
+      'created-date-tooltip': 'Date you created the watermarking request',
+      'status-tooltip': 'Status of your request',
+    },
+  },
+};
+
+export default apiWatermarking;

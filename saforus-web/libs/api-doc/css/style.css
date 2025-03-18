@@ -1,0 +1,140 @@
+ /* BASE OVERRIDES */
+
+/* Add buffer for nicer anchor links */
+.container.unlimiter .prose h2:first-child {
+  padding-top: 20px;
+}
+.container.unlimiter .prose h3:first-child {
+  padding-top: 20px;
+}
+/* Header gets big */
+@media only screen and (max-width:960px) {
+ .container.unlimiter .prose h2:first-child {
+   padding-top: 60px;
+  }
+.container.unlimiter .prose h3:first-child {
+    padding-top: 60px;
+  }
+}
+
+/* Header gets bigger */
+@media only screen and (max-width:640px) {
+ .container.unlimiter .prose h2:first-child{
+
+    padding-top: 100px;
+  } 
+.container.unlimiter .prose h3:first-child {
+    padding-top: 100px;
+  }
+}
+
+
+.container.unlimiter .prose table,
+.container.unlimiter .prose table code {
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.container.unlimiter .prose table th,
+.container.unlimiter .prose table td {
+  padding: 5px;
+}
+.container.unlimiter .dark.keyline-top,
+.container.unlimiter .dark.keyline-bottom {
+  border-color: #313131;
+}
+.container.unlimiter html,
+.container.unlimiter body,
+.container.unlimiter #app,
+.container.unlimiter .container {
+  height: 100%;
+}
+.container.unlimiter body pre {
+  padding: 0;
+}
+ /* BASE ADDONS */
+.container.unlimiter .fill-dark2 { background-color: #313131; }
+.container.unlimiter .fill-dark2 .rounded-toggle input[type=radio]:checked + label,
+.container.unlimiter .fill-dark2 .rounded-toggle .active { background-color: #313131; }
+.container.unlimiter .space-top3 { margin-top: 30px;}
+.container.unlimiter .space-top5 { margin-top: 100px;}
+.container.unlimiter .line-height15 { line-height: 15px; }
+.container.unlimiter .pad00y { padding-top: 2px; padding-bottom: 2px; }
+.container.unlimiter .space-bottom00 { margin-bottom: 3px;}
+.container.unlimiter .endpoint {
+  width: 100%;
+  display: flex;
+}
+
+.container.unlimiter .endpoint-url {
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+.container.unlimiter .endpoint-url a {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  font-weight:bold;
+  padding: 2px;
+  color: #fff;
+}
+.container.unlimiter .endpoint-url a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.container.unlimiter a.hljs-linked {
+  border-radius: 2px;
+  color: #a5c261;
+  background: #383C2F;
+  padding: 2px;
+}
+.container.unlimiter body .prose blockquote {
+  padding: 5px 10px;
+  background: #232323;
+}
+.container.unlimiter .preview {
+  background-image: -webkit-linear-gradient(#F1F075, #F1F075);
+  background-size: 10px 10px;
+  background-repeat: repeat-y;
+}
+.container.unlimiter .preview h2::after,
+.container.unlimiter .preview h3::after {
+  content: 'PREVIEW';
+  background-color: #F1F075;
+  border-radius: 2px;
+  font-size: 9px;
+  font-weight: normal;
+  padding: 2px 5px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.activeMenu >div >span {
+    font-weight: 600 !important;
+    color: #736CFB;
+}
+.activeMenuParent{
+  background-color: #ECEBFF !important;
+  border-radius: 0 !important;
+  border-left: 3px solid #736CFB !important;
+}
+
+.activeMenuMain  span{
+  font-weight: 600 !important;
+  color: #736CFB !important;
+}
+
+.activeMainMenu.subMainMenu{
+  background-color: #ECEBFF !important;
+}
+.activeMainMenu span{
+  font-weight: 600 !important;
+  color: #736CFB !important;
+}
+
+.imageApiDoc{
+  padding: 10px !important;
+}

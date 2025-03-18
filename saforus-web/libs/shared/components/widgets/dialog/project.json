@@ -1,0 +1,18 @@
+{
+  "name": "shared-components-widgets-dialog",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/components/widgets/dialog/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/components/widgets/dialog/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

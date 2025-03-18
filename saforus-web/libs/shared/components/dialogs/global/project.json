@@ -1,0 +1,18 @@
+{
+  "name": "shared-components-dialogs-global",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/components/dialogs/global/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/components/dialogs/global/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

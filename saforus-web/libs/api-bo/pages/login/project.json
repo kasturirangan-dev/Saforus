@@ -1,0 +1,16 @@
+{
+  "name": "api-bo-pages-login",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-bo/pages/login/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/api-bo/pages/login/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

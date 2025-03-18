@@ -1,0 +1,20 @@
+name: 'Stag: CS API BO - CI/CD - Auto'
+
+on:
+  push:
+    tags:
+      - 'stage-api-bo-[0-9]*.[0-9]*.[0-9]*' # Matches tags like stage-api-bo-0.36.0
+
+jobs:
+  call-ci-cd-workflow:
+    uses: ./.github/workflows/s3-ci-cd-template.yml
+    with:
+      AWS_ACCOUNT_ID: '062029356220'
+      DEPLOYMENT_ENV: staging
+      TARGET_APP: api-bo
+      S3_BUCKET_DIR: stag-saforus-asset/webapp/bo/
+      CLOUDFRONT_DISTRIBUTION_ID: E16S8DPDB9LW4N
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

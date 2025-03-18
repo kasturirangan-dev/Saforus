@@ -1,0 +1,18 @@
+{
+  "name": "saforus-containers-multi-drm-view-orders",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/saforus/containers/multi-drm/view-orders/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/saforus/containers/multi-drm/view-orders/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

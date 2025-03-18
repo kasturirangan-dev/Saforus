@@ -1,0 +1,16 @@
+{
+  "name": "api-bo-themes",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-bo/themes/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/api-bo/themes/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

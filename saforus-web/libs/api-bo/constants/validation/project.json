@@ -1,0 +1,18 @@
+{
+  "name": "api-bo-constants-validation",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-bo/constants/validation/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-bo/constants/validation/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

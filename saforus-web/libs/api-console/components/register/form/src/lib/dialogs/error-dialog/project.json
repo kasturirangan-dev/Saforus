@@ -1,0 +1,18 @@
+{
+  "name": "api-console-components-register-form-src-lib-dialogs-error-dialog",
+  "$schema": "../../../../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-console/components/register/form/src/lib/dialogs/error-dialog/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-console/components/register/form/src/lib/dialogs/error-dialog/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

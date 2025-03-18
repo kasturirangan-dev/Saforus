@@ -1,0 +1,18 @@
+{
+  "name": "api-bo-containers-login",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-bo/containers/login/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-bo/containers/login/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

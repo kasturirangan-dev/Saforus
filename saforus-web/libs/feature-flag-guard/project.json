@@ -1,0 +1,16 @@
+{
+  "name": "feature-flag-guard",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/feature-flag-guard/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/feature-flag-guard/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

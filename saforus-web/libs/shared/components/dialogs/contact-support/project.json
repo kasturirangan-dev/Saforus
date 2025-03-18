@@ -1,0 +1,18 @@
+{
+  "name": "shared-components-dialogs-contact-support",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/components/dialogs/contact-support/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/components/dialogs/contact-support/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

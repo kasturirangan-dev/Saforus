@@ -1,0 +1,150 @@
+// at the moment there is no Korean definition. Add this later
+const userManagement = {
+  'search-user': {
+    title: 'User Management',
+    'search-users': 'Search Users',
+    button: {
+      search: 'Search',
+      'place-holder': 'User name or email account',
+      'user-type': 'User Type',
+      'team-name': 'Team Name',
+      subscription: 'Subscription',
+      status: 'Status',
+      'joined-date': 'Joined Date',
+    },
+    table: {
+      title: 'Results ( Total %{number} )',
+      total: '%{current} out of %{total}',
+      email: 'Email',
+      name: 'Name',
+      type: 'Type',
+      'team-name': 'Team Name',
+      subscription: 'Subscription',
+      status: 'Status',
+      joined: 'Joined',
+      master: 'MASTER',
+      member: 'MEMBER',
+      viewer: 'VIEWER',
+      'free-plan': 'Free Plan',
+      standard: 'Standard',
+      enterprise: 'Enterprise',
+      active: 'Active',
+      inactive: 'Inactive',
+    },
+    'user-detail': {
+      'user-detail': 'User Details',
+      'account-information': 'Account Information',
+      name: 'Name',
+      'login-account': 'Login Account',
+      'mobile-number': 'Mobile Number',
+      'company-name': 'Company name',
+      'company-url': 'Company URL',
+      'country-of-incorporation': 'Country of Incorporation',
+      'recent-session': 'Recent Session %{date}',
+      'team-information': 'Team Information',
+      'team-name': 'Team Name',
+      'team-owner': 'Team Owner',
+      'team-service-plan': 'Team Service Plan',
+      'team-description': 'Team Description',
+      'email-subscription': 'Email Subscription',
+      email: 'Email',
+      'email-subscribe-check-box':
+        'I agree to receive advertising and marketing promotional emails from SaForus',
+      'emai-subsciption-information':
+        'Subscribed to SaForus newsletter on 03/27/2023 9:00 AM',
+      'language-and-region': 'Language and Region',
+      language: 'Language',
+      'time-zone': 'Time Zone',
+      'order-history': 'Order History',
+      button: {
+        'view-orders': 'View Orders',
+        'delete-account': 'Delete Account',
+        'reset-password': 'Reset Password',
+      },
+      dialogs: {
+        'delete-account': {
+          title: 'Delete User Account',
+          description:
+            'User account can be deleted by Super Admin. Admin can also archive the account and block users from using the service.',
+          confirm: 'I confirm to change the user account status to inactive.',
+          'confirm-title':
+            'Are you sure to delete the user account from SaForus forever?',
+          'confirm-description': 'You can not recover the user details.',
+        },
+        'reset-pass': {
+          title: 'User Password Reset',
+          'user-name': 'User Name',
+          'email-account': 'Email Account',
+          'new-password': 'New Password',
+          'new-password-placeholder': 'Enter new password',
+          'confirm-password': 'Confirm Password',
+          'confirm-password-placeholder': 'Enter confirm password',
+          confirm:
+            'I would like to reset password upon the customer’s request.',
+          required: 'Required.',
+          'email-invalid': 'The email format is not correct.',
+          'password-required': 'Password is required.',
+          'password-required-length': 'Password must be at least 8 characters.',
+          'password-requires-number': 'Password requires a number.',
+          'password-requires-lowercase':
+            'Password requires a lowercase character.',
+          'password-requires-uppercase':
+            'Password requires an uppercase character.',
+          'password-required-symbol': 'Password requires a symbol.',
+          'password-must-match': 'The Confirm Password does not match.',
+          'company-name-required': 'Company name is required.',
+          'country-incorporation-required':
+            'Country of incorporation is required.',
+          'name-required': 'Name is required.',
+          'email-required': 'Email is required.',
+          'title-required': 'Title is required.',
+          'title-invalid':
+            'Only ( [],(), -,_, ) special characters are allowed.',
+          'content-required': 'Content is required.',
+          'name-invalid': 'The name cannot contain special characters.',
+          'checkbox-required': 'Checkbox selection is required.',
+          'min-length-100': 'Please enter at least 100 characters.',
+          'max-length-40': 'Please enter no more than 50 characters.',
+          'max-length-50': 'Please enter no more than 50 characters.',
+          'max-length-150': 'Please enter no more than 150 characters.',
+          'max-length-254': 'Please enter no more than 254 characters.',
+          'max-length-500': 'Please enter no more than 500 characters.',
+          'max-length-1000': 'Please enter no more than 1000 characters.',
+          'max-file-length':
+            'A maximum of 1 file with a capacity of 30 MB can be uploaded.',
+          'name-not-start-space': 'The first character must be a letter.',
+          'name-special-allowed':
+            'Only ( (), -,_ ) special characters are allowed.',
+          'team-name-required': 'Team name is required.',
+          'order-format': 'Only numbers, letters and hyphen ‘-’ are allowed.',
+          'invite-member-error-message': {
+            'name-required': 'Name is required.',
+            'exclucdes-special-characters':
+              'The name cannot contain special characters.',
+            'max-50-character': 'Please enter no more than 50 characters',
+            'first-character-must-letter':
+              'The first character must be a letter.',
+            'email-required': 'Email is required',
+            'email-must-english': 'Please enter an email in english',
+            'email-format': 'The email format is not correct.',
+            'max-254-character': 'Please enter no more than 254 characters.',
+            'role-required': 'Role is required',
+          },
+          'enter-current-password-count':
+            'The entered "current password" is incorrect. (%{time} / %{total})',
+          'new-password-required': 'New password is required.',
+          'confirm-password-required': 'Confirm password is required.',
+          'password-must-different':
+            'Password is not available at this time. Please enter a different password.',
+        },
+        cancel: 'Cancel',
+        archive: 'Archive',
+        delete: 'Delete',
+        'reset-password': 'Reset Password',
+        'reset-password-success': 'The password has been changed successfully.',
+      },
+    },
+  },
+};
+
+export default userManagement;

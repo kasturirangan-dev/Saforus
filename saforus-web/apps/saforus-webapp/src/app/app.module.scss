@@ -1,0 +1,19 @@
+$main-font-family: 'Noto Sans KR', 'SF Pro Display', -apple-system,
+  BlinkMacSystemFont, 'Basier Square', 'Apple SD Gothic Neo', 'Roboto',
+  'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+body {
+  font-family: $main-font-family;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import '../assets/scss/font.module';
+@import '../assets/scss/typography.module';
+@import '../assets/scss/spacing.module';
+@import '../assets/scss/color.module';
+
+.container {
+}

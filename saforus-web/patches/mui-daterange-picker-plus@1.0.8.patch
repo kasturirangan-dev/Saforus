@@ -1,0 +1,304 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+index 43bd6eea27e246d6aa0fd645f2a0c517d632a375..35f71bd4804a71389304a5f899dbcef09f999ccf 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -40,13 +40,10 @@ var DefinedRanges = ({
+ }) => {
+   const theme = useTheme();
+   return /* @__PURE__ */ jsxs(Fragment, { children: [
+-    /* @__PURE__ */ jsx(Grid2, { xs: "auto", children: /* @__PURE__ */ jsx(
++    /* @__PURE__ */ jsx(Grid2, { className:"drp-header", xs: "auto", children: /* @__PURE__ */ jsx(
+       Box,
+       {
+         height: "54px",
+-        sx: {
+-          backgroundColor: alpha(theme.palette.grey[400], 0.1)
+-        }
+       }
+     ) }),
+     /* @__PURE__ */ jsx(Grid2, { xs: true, children: /* @__PURE__ */ jsx(
+@@ -58,6 +55,7 @@ var DefinedRanges = ({
+         children: ranges.map((range, idx) => /* @__PURE__ */ jsx(
+           ListItem,
+           {
++            className: isSameRange(range, selectedRange) ? "drp-selected-range" : "",
+             disablePadding: true,
+             onClick: () => setRange(range),
+             sx: [
+@@ -91,7 +89,6 @@ var DefinedRanges = ({
+                           color: alpha(theme.palette.grey[600], 1)
+                         },
+                         {
+-                          fontFamily: "Roboto",
+                           fontSize: 13,
+                           fontWeight: 400
+                         }
+@@ -279,7 +276,7 @@ var MonthHeader = ({
+     return false;
+   };
+   return /* @__PURE__ */ jsxs2(Fragment2, { children: [
+-    /* @__PURE__ */ jsx2(Grid22, { xs: "auto", ml: "10px", container: true, children: /* @__PURE__ */ jsx2(
++    /* @__PURE__ */ jsx2(Grid22, { xs: "auto", container: true, children: /* @__PURE__ */ jsx2(
+       IconButton,
+       {
+         disableRipple: true,
+@@ -342,10 +339,7 @@ var MonthHeader = ({
+         slotProps: {
+           root: {
+             sx: {
+-              width: {
+-                sm: "100px",
+-                md: "120px"
+-              },
++              minWidth: "60px",
+               height: "30px",
+               backgroundColor: "#fff"
+             }
+@@ -359,7 +353,15 @@ var MonthHeader = ({
+               maxHeight: "224px",
+               boxShadow: "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px"
+             }
+-          }
++          },
++          anchorOrigin: {
++            vertical: "bottom",
++            horizontal: "left"
++          },
++          transformOrigin:{
++            vertical: 'top',
++            horizontal: 'left',
++          },
+         },
+         value: currentMonth,
+         onChange: handleMonthChange,
+@@ -377,7 +379,7 @@ var MonthHeader = ({
+         })
+       }
+     ) }) }),
+-    /* @__PURE__ */ jsx2(Grid22, { xsOffset: "auto", xs: "auto", container: true, children: /* @__PURE__ */ jsx2(FormControl, { children: /* @__PURE__ */ jsx2(
++    /* @__PURE__ */ jsx2(Grid22, {  ml:"8px", xsOffset: "auto", xs: "auto", container: true, children: /* @__PURE__ */ jsx2(FormControl, { children: /* @__PURE__ */ jsx2(
+       Select,
+       {
+         variant: "outlined",
+@@ -401,6 +403,7 @@ var MonthHeader = ({
+         slotProps: {
+           root: {
+             sx: {
++              minWidth: "70px",
+               height: "30px",
+               backgroundColor: "#fff"
+             }
+@@ -414,7 +417,15 @@ var MonthHeader = ({
+               maxHeight: "224px",
+               boxShadow: "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px"
+             }
+-          }
++          },
++          anchorOrigin: {
++            vertical: "bottom",
++            horizontal: "right"
++          },
++          transformOrigin:{
++            vertical: 'top',
++            horizontal: 'right',
++          },
+         },
+         value: getYear(currentDate),
+         onChange: handleYearChange,
+@@ -431,7 +442,7 @@ var MonthHeader = ({
+         })
+       }
+     ) }) }),
+-    /* @__PURE__ */ jsx2(Grid22, { mr: "10px", xsOffset: "auto", xs: "auto", container: true, children: /* @__PURE__ */ jsx2(
++    /* @__PURE__ */ jsx2(Grid22, {  xsOffset: "auto", xs: "auto", container: true, children: /* @__PURE__ */ jsx2(
+       IconButton,
+       {
+         disableRipple: true,
+@@ -493,21 +504,27 @@ var Day = ({
+   return /* @__PURE__ */ jsx3(
+     Box2,
+     {
++      className: `drp-day ${!disabled && highlighted ? "drp-day-highlighted" : ""}`,
+       sx: {
+         display: "flex",
+         borderRadius: startOfRange ? "50% 0 0 50%" : endOfRange ? "0 50% 50% 0" : void 0,
+-        backgroundColor: !disabled && highlighted ? alpha2(theme.palette.primary.main, 0.1) : void 0
++        backgroundColor: !disabled && highlighted ? alpha2(theme.palette.primary.main, 0.1) : void 0,
++        ... !disabled && highlighted ? {
++          padding: "0 2px",
++          margin: "0 -2px"
++        }:{}
+       },
+       children: /* @__PURE__ */ jsx3(
+         IconButton2,
+         {
++          className: !disabled && filled  ? "drp-day-filled"  : !disabled && outlined ? "drp-day-outlined" : "",
+           disableRipple: true,
+           color: "primary",
+           sx: {
+             ":hover": {
+               backgroundColor: alpha2(theme.palette.primary.light, 0.2)
+             },
+-            borderRadius: "8px",
++            borderRadius: "5px",
+             height: "36px",
+             width: "36px",
+             padding: 0,
+@@ -569,12 +586,12 @@ var Month = (props) => {
+     /* @__PURE__ */ jsx4(
+       Grid23,
+       {
++        className: "drp-header",
+         container: true,
+         justifyContent: "space-between",
+         alignItems: "center",
+         sx: {
+-          height: "55px",
+-          backgroundColor: alpha3(theme.palette.grey[400], 0.1)
++          margin: "24px 24px 0 24px"
+         },
+         children: /* @__PURE__ */ jsx4(
+           MonthHeader,
+@@ -597,12 +614,14 @@ var Month = (props) => {
+     /* @__PURE__ */ jsx4(
+       Grid23,
+       {
++        className: "drp-weekdays",
+         container: true,
+         justifyContent: "center",
+         sx: {
+-          margin: "16px 24px 0 24px"
++          margin: "16px 24px 0 24px",
++          columnGap: "4px"
+         },
+-        children: WEEK_DAYS.map((day, index) => /* @__PURE__ */ jsx4(Grid23, { container: true, width: "36px", justifyContent: "center", children: /* @__PURE__ */ jsx4(
++        children: WEEK_DAYS.map((day, index) => /* @__PURE__ */ jsx4(Grid23, { container: true, width: "36px", height:"36px", alignItems:"center", justifyContent: "center", children: /* @__PURE__ */ jsx4(
+           Typography3,
+           {
+             color: "textSecondary",
+@@ -621,9 +640,11 @@ var Month = (props) => {
+         container: true,
+         direction: "column",
+         sx: {
+-          margin: "24px"
++          margin: "4px 24px 24px 24px",
++          padding: "0 8px",
++          rowGap: "4px",
+         },
+-        children: chunks(getDaysInMonth(currentDate, locale), 7).map((week, idx) => /* @__PURE__ */ jsx4(Grid23, { container: true, direction: "row", justifyContent: "center", children: week.map((day) => {
++        children: chunks(getDaysInMonth(currentDate, locale), 7).map((week, idx) => /* @__PURE__ */ jsx4(Grid23, {borderRadius: "5px", overflow: "hidden", columnGap: "4px", container: true, direction: "row", justifyContent: "center", children: week.map((day) => {
+           const isStart = isStartOfRange(dateRange, day);
+           const isEnd = isEndOfRange(dateRange, day);
+           const isRangeOneDay = isRangeSameDay(dateRange);
+@@ -767,6 +788,7 @@ var Actions = ({
+     /* @__PURE__ */ jsx6(Grid25, { children: /* @__PURE__ */ jsx6(
+       CancelButtonStyled,
+       {
++        className: "drp-cancel-btn",
+         disableRipple: true,
+         disableElevation: true,
+         variant: "text",
+@@ -777,6 +799,7 @@ var Actions = ({
+     /* @__PURE__ */ jsx6(Grid25, { children: /* @__PURE__ */ jsx6(
+       ApplyButtonStyled,
+       {
++        className: "drp-apply-btn",
+         disableRipple: true,
+         disableElevation: true,
+         type: "submit",
+@@ -797,8 +820,8 @@ import {
+ import { Fragment as Fragment5, jsx as jsx7, jsxs as jsxs6 } from "react/jsx-runtime";
+ var PreviewDateTypoStyled = styled2(Typography4)(({ theme }) => ({
+   position: "relative",
++  minWidth: "80px",
+   top: "1px",
+-  minWidth: "130px",
+   fontSize: 14,
+   lineHeight: "14px",
+   color: theme.palette.grey[800]
+@@ -806,7 +829,7 @@ var PreviewDateTypoStyled = styled2(Typography4)(({ theme }) => ({
+ var PreviewDateMessageTypoStyled = styled2(Typography4)(({ theme }) => ({
+   position: "relative",
+   top: "1px",
+-  minWidth: "130px",
++  minWidth: "80px",
+   fontSize: 14,
+   lineHeight: "14px",
+   color: theme.palette.grey[500]
+@@ -822,7 +845,18 @@ var Footer = ({
+ }) => {
+   const theme = useTheme5();
+   const previewDate = (date) => {
+-    return format2(date, "dd MMMM yyyy", { locale });
++    let dateFormat;
++    switch (locale?.code) {
++      case 'en-US':
++        dateFormat = 'MMM dd, yyyy';
++        break;
++      case 'ko':
++        dateFormat = 'yyyy년 MM월 dd일';
++        break;
++      default:
++        dateFormat = 'dd MMMM yyyy';
++    }
++    return format2(date, dateFormat, { locale });
+   };
+   const IconXs = RangeSeparatorIcons?.xs || KeyboardDoubleArrowDown;
+   const IconMd = RangeSeparatorIcons?.md || KeyboardDoubleArrowRight;
+@@ -830,14 +864,18 @@ var Footer = ({
+     /* @__PURE__ */ jsxs6(
+       Grid26,
+       {
++        className: "drp-footer",
+         xs: true,
+         container: true,
+-        gap: "8px",
++        gap: "10px",
+         direction: {
+-          xs: "column",
++          xs: "row",
+           md: "row"
+         },
+-        justifyContent: "flex-start",
++        justifyContent: {
++          xs:"center",
++          md:"flex-start"
++        },
+         alignItems: "center",
+         children: [
+           startDate ? /* @__PURE__ */ jsx7(
+@@ -866,7 +904,7 @@ var Footer = ({
+               sx: {
+                 fill: theme.palette.grey[400],
+                 display: {
+-                  xs: "block",
++                  xs: "none",
+                   md: "none"
+                 }
+               }
+@@ -880,11 +918,15 @@ var Footer = ({
+                 fill: theme.palette.grey[400],
+                 display: {
+                   xs: "none",
+-                  md: "block"
++                  md: "none"
+                 }
+               }
+             }
+           ),
++          jsx7(Typography5,
++          {
++            children: "-"
++          }),
+           endDate ? /* @__PURE__ */ jsx7(
+             PreviewDateTypoStyled,
+             {
+@@ -1067,7 +1109,7 @@ var Sections = (props) => {
+           /* @__PURE__ */ jsx9(
+             Grid28,
+             {
+-              display: { xs: hideDefaultRanges ? "none" : "flex", md: "none" },
++              display: { xs: hideDefaultRanges ? "none" : "none", md: "none" },
+               container: true,
+               height: "48px",
+               alignItems: "center",

@@ -1,0 +1,18 @@
+{
+  "name": "api-console-containers-reset-password",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api-console/containers/reset-password/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/api-console/containers/reset-password/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

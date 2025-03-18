@@ -1,0 +1,18 @@
+{
+  "name": "shared-components-widgets-loading-indicator",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/components/widgets/loading-indicator/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/components/widgets/loading-indicator/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

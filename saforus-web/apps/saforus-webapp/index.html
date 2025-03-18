@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      SaForus | Forensic Watermarking & Piracy Detection for Content Protection
+    </title>
+    <meta
+      name="description"
+      content="SaForus offers a powerful digital watermarking service for image, video, audio & document contents, enabling effective piracy prevention."
+      data-react-helmet="true"
+    />
+    <meta
+      name="keywords"
+      content="digital watermarking, embedding watermark, digital content security, DRM, watermark image, watermark photo, watermark video, watermark audio, watermarking pdf, content protect, copyright protection, invisible watermarking , invisible watermark, watermarking api, watermark api"
+      data-react-helmet="true"
+    />
+    <meta
+      property="og:title"
+      content="SaForus | Forensic Watermarking & Piracy Detection for Content Protection"
+      data-react-helmet="true"
+    />
+    <meta
+      property="og:description"
+      content="SaForus offers a powerful digital watermarking service for image, video, audio & document contents, enabling effective piracy prevention."
+      data-react-helmet="true"
+    />
+    <meta
+      property="og:image"
+      content="https://de6nscivdttxy.cloudfront.net/common/meta-1200x630.png"
+      data-react-helmet="true"
+    />
+
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/favico.svg" />
+    <link rel="stylesheet" href="/src/styles.scss" />
+    <meta
+      name="google-site-verification"
+      content="LYm3fYHSgyCU7TEXW44rQkJrO12JxvbBx-jhhl8RlKo"
+    />
+  </head>
+  <script>
+    // fix for using chrome google translate
+    if (typeof Node === 'function' && Node.prototype) {
+      const originalRemoveChild = Node.prototype.removeChild;
+      Node.prototype.removeChild = function (child) {
+        if (child.parentNode !== this) {
+          if (console) {
+            console.error(
+              'Cannot remove a child from a different parent',
+              child,
+              this
+            );
+          }
+          return child;
+        }
+        return originalRemoveChild.apply(this, arguments);
+      };
+
+      const originalInsertBefore = Node.prototype.insertBefore;
+      Node.prototype.insertBefore = function (newNode, referenceNode) {
+        if (referenceNode && referenceNode.parentNode !== this) {
+          if (console) {
+            console.error(
+              'Cannot insert before a reference node from a different parent',
+              referenceNode,
+              this
+            );
+          }
+          return newNode;
+        }
+        return originalInsertBefore.apply(this, arguments);
+      };
+    }
+  </script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
